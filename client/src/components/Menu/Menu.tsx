@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import './Menu.css';
-const Logo = require('./Logo.png')
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
+const Logo = require('./Logo.png');
 
 const Menu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,9 @@ const Menu = () => {
                 <div className="wrapper">
                     <div className="header-line">
                         <div className="header-logo">
-                            <img src={Logo} alt="Logo" />
+                            <a href="#">
+                                <img src={Logo} alt="Logo" />
+                            </a>
                         </div>
                         <div className="header-text">
                             <a href="#" className="nav-text">
@@ -41,8 +44,8 @@ const Menu = () => {
                             </a>
                         </div>
                         <div className="btns">
-                            <button type="button" className="btn">Log in</button>
-                            <button type="button" className="btn btn-primary">Sign up</button>
+                            <Button variant="dark" className="Btn1">Login</Button>
+                            <Button variant="primary" className="Btn2">Sign Up</Button>
                         </div>
                     </div>
                 </div>

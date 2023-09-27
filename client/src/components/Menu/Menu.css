@@ -9,6 +9,7 @@ header {
     width: 100%;
     background: var(--bg-card-bg-2, #1E1F25);
 }
+
 @font-face {
     font-family: 'Source Sans Pro';
     font-size: 18px;
@@ -51,14 +52,11 @@ header {
 
 .nav-text {
     color: var(--grey-paragraph-6, #ADB3BF);
-
-    /* Web/Paragraph1/Regular */
     font-family: 'Source Sans Pro';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-    /* 155.556% */
     text-decoration: none;
     padding: 8px 18px;
     margin-right: 30px;
@@ -75,7 +73,7 @@ header {
     display: inline-block;
 }
 
-.btn {
+.btn1 {
     display: inline-block;
     color: var(--White, #FFF);
 
@@ -93,9 +91,11 @@ header {
     gap: 10px;
     border-radius: 4px;
     background: var(--primary-9, #1E1F25);
+    /* ! Надо поправить */
+    padding-right: 710px !important;
 }
 
-.btn-primary {
+.btn2 {
     display: inline-block;
     color: var(--White, #FFF);
 
@@ -135,10 +135,11 @@ header {
         font-size: 50px;
     }
 
-    header{
+    header {
         width: 100%;
     }
-    .navigation.responsive{
+
+    .navigation.responsive {
         position: relative;
         top: 50px;
         left: auto;
@@ -148,19 +149,22 @@ header {
         height: 340px !important;
     }
 
-    .navigation.responsive a.icon{
+    .navigation.responsive a.icon {
         position: absolute;
         top: -60px;
         right: 0px;
     }
-    .navigation.responsive{
+
+    .navigation.responsive {
         position: relative;
         top: 50px;
         left: 0px;
     }
-    .navigation.responsive a{
+
+    .navigation.responsive a {
+        font-size: 30px !important;
         float: none;
-        display:block;
+        display: block;
         text-align: left;
     }
 }
