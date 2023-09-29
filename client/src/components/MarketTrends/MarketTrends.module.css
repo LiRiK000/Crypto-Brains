@@ -4,13 +4,146 @@
     box-sizing: border-box;
 }
 
-<<<<<<< refs/remotes/LiRiK/main:client/src/components/MarketTrends/MarketTrends.css
-body {
-    /* overflow-x: hidden; */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    src: url(../../../public/fonts/SourceSans3-VariableFont_wght.ttf);
 }
 
-=======
->>>>>>> Make a css module:client/src/components/MarketTrends/MarketTrends.module.css
+@font-face {
+    font-family: 'Source Sans Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    src: url(../../../public/fonts/SourceSans3-Regular.ttf);
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-main-bg-1, #131517);
+}
+
+
+
+.SectionName {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+    background-color: #131517;
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 60px;
+}
+
+
+.card_wrapper {
+    margin-top: 10% !important;
+    margin-bottom: 10%;
+    margin-right: 5% !important;
+    margin-left: 10% !important;
+}
+
+
+
+.img-card {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.title-card {
+    color: var(--White, #FFF) !important;
+    text-align: center !important;
+    font-family: 'Source Sans Pro';
+    font-size: 20px !important;
+    font-style: bold;
+    font-weight: 600 !important;
+    line-height: 32px !important;
+}
+
+.subtitle-card {
+    color: var(--White, #FFF) !important;
+    font-family: 'Source Sans Pro' !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 36px !important;
+}
+
+
+.card {
+    margin-bottom: 50px !important;
+    margin-right: 30px !important;
+    border: 2px solid var(--bg-card-bg-2, #1E1F25) !important;
+    height: 400px !important;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+
+
+.Btn-container {
+    margin-bottom: 120px !important;
+}
+
+#Btn {
+    text-align: center;
+    justify-content: center;
+    color: var(--White, #FFF);
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+@media (max-width: 822px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .SectionName {
+        width: 100%;
+        margin-bottom: 100%;
+        font-size: 24px;
+        padding: 60px 20px;
+        margin: 0;
+    }
+
+    .card-wrapper {
+        margin-top: 50px !important;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .title-card {
+        font-size: 18px;
+    }
+
+    .subtitle-card {
+        font-size: 20px;
+    }
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 @font-face {
     font-family: 'Source Sans Pro';
