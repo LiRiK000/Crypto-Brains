@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+<<<<<<< refs/remotes/LiRiK/main:client/src/components/MarketTrends/MarketTrends.css
 body {
     /* overflow-x: hidden; */
 }
 
+=======
+>>>>>>> Make a css module:client/src/components/MarketTrends/MarketTrends.module.css
 
 @font-face {
     font-family: 'Source Sans Pro';
@@ -48,11 +51,11 @@ body {
 }
 
 
-.card-wrapper {
-    margin-left: 165px;
-    margin-right: 165px;
-    margin-bottom: 110px;
-    display: inline-flex;
+.card_wrapper {
+    margin-top: 10% !important;
+    margin-bottom: 10%;
+    margin-right: 5% !important;
+    margin-left: 10% !important;
 }
 
 
@@ -83,7 +86,7 @@ body {
 
 
 .card {
-    width: 100% !important;
+    margin-bottom: 50px !important;
     margin-right: 30px !important;
     border: 2px solid var(--bg-card-bg-2, #1E1F25) !important;
     height: 400px !important;
@@ -96,11 +99,12 @@ body {
 
 
 .Btn-container {
-    text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 120px !important;
 }
 
 #Btn {
+    text-align: center;
+    justify-content: center;
     color: var(--White, #FFF);
     font-family: 'Source Sans Pro';
     font-size: 20px;

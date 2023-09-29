@@ -28,7 +28,7 @@ header {
     src: url(../../../public/fonts/SourceSans3-Regular.ttf);
 }
 
-.header-logo {
+.header_logo {
     border-right: 1px solid #adb3bf54;
     padding-right: 40px;
 }
@@ -39,7 +39,7 @@ header {
     display: none;
 }
 
-.header-line {
+.header_line {
     justify-content: space-around;
     padding-top: 32px;
     display: flex;
@@ -50,7 +50,7 @@ header {
     margin: 0 165px;
 }
 
-.nav-text {
+.nav_text {
     color: var(--grey-paragraph-6, #ADB3BF);
     font-family: 'Source Sans Pro';
     font-size: 18px;
@@ -62,14 +62,14 @@ header {
     margin-right: 30px;
 }
 
-.nav-text:hover {
+.nav_text:hover {
     color: var(--White, #FFF);
     transition: color 0.3s ease-in-out;
 }
 
 .btns {
     border-radius: 4px !important;
-    padding: 13px 26px !important;
+    padding: 23px 26px !important;
     display: inline-block;
 }
 
@@ -91,8 +91,6 @@ header {
     gap: 10px;
     border-radius: 4px;
     background: var(--primary-9, #1E1F25);
-    /* ! Надо поправить */
-    padding-right: 710px !important;
 }
 
 .btn2 {
@@ -123,7 +121,7 @@ header {
 
 @media screen and (max-width: 1270px) {
 
-    .nav-text,
+    .nav_text,
     .btns {
         display: none;
     }
@@ -166,5 +164,11 @@ header {
         float: none;
         display: block;
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header_logo{
+        display: none;
     }
 }
