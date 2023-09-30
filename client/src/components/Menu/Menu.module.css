@@ -8,6 +8,7 @@
 header {
     width: 100%;
     background: var(--bg-card-bg-2, #1E1F25);
+    border-bottom: #1B70F1 1px solid;
 }
 
 @font-face {

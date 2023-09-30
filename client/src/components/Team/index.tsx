@@ -3,13 +3,13 @@ import styles from './index.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Container, Col, Row } from 'react-bootstrap';
 
-interface TeamProps {
+interface ITeamProps {
     cardData: { name: string; position: string; imageIndex: number }[];
     images: string[];
     sectionName: string;
 }
 
-const Team: React.FC<TeamProps> = (props) => {
+const TeamCards: React.FC<ITeamProps> = (props) => {
     return (
         <Container fluid className={styles.wrapper}>
             <>
@@ -39,4 +39,4 @@ const Team: React.FC<TeamProps> = (props) => {
     );
 };
 
-export default Team;
+export default TeamCards;

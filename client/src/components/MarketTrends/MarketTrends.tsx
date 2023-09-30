@@ -29,7 +29,8 @@ const MarketTrends = () => {
 
                                 <Card className={styles.card} style={{ background: '#131517' }}>
                                     <Card.Body>
-                                        <Card.Title className="text-center title-card">
+                                        <br />
+                                        <Card.Title className="text-center title-card text-white">
                                             <img className="img-card" src={BTC} alt="BTC" /> <br />
                                             Bitcoin / BTC <br />
                                             <img src={arrowUp} alt="Up" /> <br /> <br />

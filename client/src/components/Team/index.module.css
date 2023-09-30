@@ -46,6 +46,7 @@ a:active {
     margin: 0 auto;
     width: 80%;
     margin-bottom: 110px;
+    border-bottom: gray 1px solid;
 }
 
 /* !Section-name */
