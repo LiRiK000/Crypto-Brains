@@ -5,7 +5,6 @@ import Team from "../../components/Team/index";
 
 
 
-
 const ManagmentDeportment = [require('../../components/Team/img/1.png'), require('../../components/Team/img/2.png'), require('../../components/Team/img/3.png'), require('../../components/Team/img/4.png')];
 const HRDeportment = [require('../../components/Team/img/5.png'), require('../../components/Team/img/6.png'), require('../../components/Team/img/7.png'), require('../../components/Team/img/8.png')];
 const MarketingDeportment = [require('../../components/Team/img/9.png'), require('../../components/Team/img/10.png'), require('../../components/Team/img/11.png'), require('../../components/Team/img/12.png')];

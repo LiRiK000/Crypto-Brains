@@ -13,13 +13,16 @@
     "@types/react-dom": "^18.2.7",
     "axios": "^1.5.1",
     "bootstrap": "^5.3.2",
+    "framer-motion": "^10.16.4",
     "install": "^0.13.0",
     "mobx": "^6.10.2",
     "mobx-react-lite": "^4.0.5",
     "npm": "^10.1.0",
+    "parallax-js": "^3.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.0",
     "react-dom": "^18.2.0",
+    "react-parallax": "^3.5.1",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
@@ -51,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "@types/parallax-js": "^3.1.1",
     "css-loader": "^6.8.1",
     "style-loader": "^3.3.3"
   }

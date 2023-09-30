@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from './pages/Team/Team'; // Замените на путь к вашему компоненту About
+import About from './pages/Team/Team';
 import NewPas from './pages/Log-Reg/NewPas';
-import Home from "./pages/HomePage/Home";
+import Home from "./pages/Home/Home";
+import Error from "./pages/E404/Error";
 
 function App() {
     return (
@@ -10,7 +11,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/career" element={<About />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </Router>
     );

@@ -20,7 +20,7 @@ const Menu = () => {
                     <div className={styles.wrapper}>
                         <div className={styles.header_line}>
                             <div className={styles.header_logo}>
-                                <a href="#">
+                                <a href="/">
                                     <img src={Logo} alt="Logo" />
                                 </a>
                             </div>
