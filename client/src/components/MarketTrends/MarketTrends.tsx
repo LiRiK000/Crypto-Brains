@@ -25,7 +25,7 @@ const MarketTrends = () => {
                 <div className={styles.card_wrapper}>
                     <Row>
                         {Array.from({ length: 6 }).map((_, index) => (
-                            <Col xxxl xxl xl={4} lg={4} md={6} sm={12} xs={12} xxs={12} key={index}>
+                            <Col xxl xl={4} lg={4} md={6} sm={12} xs={12} xxs={12} key={index}>
 
                                 <Card className={styles.card} style={{ background: '#131517' }}>
                                     <Card.Body>
