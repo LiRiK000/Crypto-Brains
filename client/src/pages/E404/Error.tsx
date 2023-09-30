@@ -28,12 +28,12 @@ const Error = () => {
                     animate={{ y: 0 }}
                     transition={{ type: 'spring', damping: 10 }}
                 >
-                    <button className={styles.homeButton}>
-                        Home
-                    </button>
+                    <a href="/">
+                        <button className={styles.homeButton}>
+                            Home
+                        </button>
+                    </a>
                 </motion.p>
-                <a href="/">
-                </a>
             </div>
         </div>
     );
