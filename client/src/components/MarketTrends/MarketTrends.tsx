@@ -35,7 +35,7 @@ const MarketTrends = () => {
                                             Bitcoin / BTC <br />
                                             <img src={arrowUp} alt="Up" /> <br /> <br />
                                         </Card.Title>
-                                        <Card.Subtitle className="mb-2 text-center subtitle-card">₹ 28,214,25.341</Card.Subtitle>
+                                        <Card.Subtitle className="mb-2 text-center text-white" style={{fontFamily: 'sans-serif'}}>₹ 28,214,25.341</Card.Subtitle>
                                         <Card.Img src={positive} alt="Positive" />
                                     </Card.Body>
                                 </Card>
@@ -44,7 +44,7 @@ const MarketTrends = () => {
                     </Row>
                     <div className="Btn-container d-flex justify-content-center mb-120">
                         <Button variant="primary" className="btn btn-lg text-center" id='Btn' style={{
-                            marginBottom: '120px', marginTop: '60px', padding: '0px 165px', alignItems: 'center',
+                            marginBottom: '120px', marginTop: '60px', alignItems: 'center',
                             gap: '60px', alignSelf: 'stretch'
                         }}>See All Market</Button>
                     </div>

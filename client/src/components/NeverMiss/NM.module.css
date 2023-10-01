@@ -1,0 +1,131 @@
+/* Define custom fonts using @font-face */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    src: url(../../../public/fonts/SourceSans3-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Source Sans Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    src: url(../../../public/fonts/SourceSans3-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    max-height: max-content;
+    height: auto;
+    width: 100%;
+    background: var(--bg-main-bg-1, #131517);
+}
+
+.textSection {
+    margin-top: 146px;
+    margin-left: 5%;
+}
+
+
+.title {
+    color: var(--White, #FFF);
+    font-family: 'Source Sans Pro';
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle {
+    color: var(--grey-paragraph-6, #ADB3BF);
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+.buttonSection {
+    margin-top: 80px;
+}
+
+
+.component {
+    margin-right: 10px;
+}
+
+.component:last-child {
+    margin-right: 0px !important;
+}
+
+.hrefBtn{
+    margin-right: 30px;
+    border-radius: 4px;
+    margin-bottom: 10px !important;
+}
+
+.hrefBtn:last-child {
+    margin-right: 0px;
+}
+
+.btn {
+    border: 1px solid var(--gradiant-6, rgba(255, 255, 255, 0.10));
+    opacity: 0.8;
+}
+
+.btnText {
+    color: var(--White, #FFF);
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.btn:hover {
+    border-radius: 4px;
+    opacity: 2;
+    border: 1px solid var(--gradiant-6, rgba(255, 255, 255, 0.418));
+}
+
+
+
+
+.imageSetction {
+    margin-top: 80px;
+    display: inline-flex;
+}
+
+
+.imgCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img1,
+.img2 {
+    max-width: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width:549px) {
+    .imageSetction {
+        display: none;
+    }
+}

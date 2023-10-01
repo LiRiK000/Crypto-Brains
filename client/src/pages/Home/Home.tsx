@@ -3,7 +3,7 @@ import Menu from "../../components/Menu/Menu";
 import Market from "../../components/MarketTrends/MarketTrends";
 import Team from "../../components/Team/index";
 import ST from "../../components/StartTraiding/ST";
-
+import NM from "../../components/NeverMiss/NM";
 
 
 
@@ -31,6 +31,7 @@ const Home: FC = () => {
             <Menu />
             <Market />
             <ST image={images} cardData={cardData}/>
+            <NM />
         </>
     ) 
 }

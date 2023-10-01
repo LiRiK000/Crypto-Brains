@@ -69,16 +69,6 @@
     line-height: 32px !important;
 }
 
-/* Styling for card subtitles */
-.subtitle-card {
-    color: var(--White, #FFF) !important;
-    font-family: 'Source Sans Pro' !important;
-    font-size: 24px !important;
-    font-style: normal !important;
-    font-weight: 600 !important;
-    line-height: 36px !important;
-}
-
 /* Styling for cards */
 .card {
     margin-bottom: 50px !important;
@@ -142,10 +132,5 @@
     /* Adjust font size for card titles */
     .title-card {
         font-size: 18px;
-    }
-
-    /* Adjust font size for card subtitles */
-    .subtitle-card {
-        font-size: 20px;
     }
 }
