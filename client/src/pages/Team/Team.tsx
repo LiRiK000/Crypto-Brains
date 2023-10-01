@@ -1,7 +1,7 @@
 import React from "react";
 import TeamCards from '../../components/TeamPageComp/Team/index';
 import Menu from "../../components/СommonСomponents/Menu/Menu";
-
+import TMP from "../../components/TeamPageComp/TeamMainPage/TMP";
 
 const ManagmentDeportment = [require('../../components/Team/img/1.png'), require('../../components/Team/img/2.png'), require('../../components/Team/img/3.png'), require('../../components/Team/img/4.png')];
 const HRDeportment = [require('../../components/Team/img/5.png'), require('../../components/Team/img/6.png'), require('../../components/Team/img/7.png'), require('../../components/Team/img/8.png')];
@@ -28,6 +28,7 @@ const Team = () => {
     return (
             <div style={{background: '#1E1F25'}}>
                 <Menu />
+                <TMP />
                 <TeamCards images={ManagmentDeportment} cardData={cardData} sectionName='Managment Deportament' />
                 <TeamCards images={HRDeportment} cardData={cardData} sectionName='HR Deportament' />
                 <TeamCards images={MarketingDeportment} cardData={cardData} sectionName='Marketing Deportament' />

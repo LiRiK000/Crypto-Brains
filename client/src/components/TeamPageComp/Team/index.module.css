@@ -45,7 +45,7 @@ a:active {
     flex-wrap: wrap;
     margin: 0 auto;
     width: 80%;
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
     border-bottom: gray 1px solid;
 }
 
@@ -89,6 +89,7 @@ a:active {
 
 .CardOwnerBlock {
     margin-bottom: 30px;
+    border-bottom: gray 1px solid;
 }
 
 .CardOwner {

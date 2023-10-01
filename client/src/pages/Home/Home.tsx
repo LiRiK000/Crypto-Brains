@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import Menu from "../../components/СommonСomponents/Menu/Menu";
 import Market from "../../components/LandingPageComp/MarketTrends/MarketTrends";
-import Team from "../../components/TeamPageComp/Team/index";
 import ST from "../../components/LandingPageComp/StartTraiding/ST";
 import NM from "../../components/LandingPageComp/NeverMiss/NM";
 
