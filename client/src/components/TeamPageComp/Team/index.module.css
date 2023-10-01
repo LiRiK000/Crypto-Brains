@@ -101,3 +101,28 @@ a:active {
     font-weight: 600;
     line-height: 36px;
 }
+
+
+/* !Icons */
+.icons {
+    display: inline-flex;
+    float: right;
+}
+
+.iconTelegram {
+    margin-right: 20px;
+}
+
+.iconInstagram,
+.iconTelegram {
+    opacity: 0.8;
+    width: 30px;
+    height: 30px;
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+.iconInstagram:hover,
+.iconTelegram:hover {
+    opacity: 1;
+}

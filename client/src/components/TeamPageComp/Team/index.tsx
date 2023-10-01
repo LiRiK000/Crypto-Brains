@@ -27,6 +27,14 @@ const TeamCards: React.FC<ITeamProps> = (props) => {
                                             <span className={styles.CardOwner}>
                                                 {card.name} / {card.position}
                                             </span>
+                                            <div className={styles.icons}>
+                                                <a href="#" className={styles.iconTelegram}>
+                                                    <img src={require('./img/Component 3.png')} alt="telegram" className={styles.iconTelegram} />
+                                                </a>
+                                                <a href="#" className={styles.iconInstagram}>
+                                                    <img src={require('./img/Component 5.png')} alt="Instagram" className={styles.iconInstagram} />
+                                                </a>
+                                            </div>
                                         </Card.Subtitle>
                                     </Card.Body>
                                 </Card>

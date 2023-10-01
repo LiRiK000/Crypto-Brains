@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    background: var(--bg-main-bg-1, #131517);
+}
+
+.textSection {
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.titleText {
+    color: var(--White, #FFF);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subText {
+    color: var(--grey-paragraph-6, #ADB3BF);
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.reasons {
+    margin-left: 5%;
+}
+
+.reason {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-bottom: #808A9A 1px solid;
+    margin-bottom: 40px;
+}
+
+.reasonTitle,
+.reasonText {
+    margin-left: 20px !important;
+}
+
+.reasonTitle {
+    color: var(--grey-paragraph-6, #ADB3BF);
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    margin-top: 40px;
+}
+
+.reasonText {
+    color: var(--grey-paragraph-8, #808A9A);
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.button {
+    padding: 13px 26px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.buttonText {
+    color: var(--White, #FFF);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.textBlock {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+
+.imgCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width:549px) {
+    .img1 {
+        display: none;
+    }
+}
+
+/* 
+@media screen and (max-width: 693px) {
+    .titleText {
+        font-size: 38px;
+    }
+
+    .subText {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .titleText {
+        font-size: 28px;
+    }
+
+    .subText {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 347px) {
+    .titleText {
+        font-size: 18px;
+    }
+
+    .subText {
+        font-size: 8px;
+    }
+} */
