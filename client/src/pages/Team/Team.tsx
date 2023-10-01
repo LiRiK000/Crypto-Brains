@@ -1,6 +1,6 @@
 import React from "react";
-import TeamCards from '../../components/Team/index';
-import Menu from "../../components/Menu/Menu";
+import TeamCards from '../../components/TeamPageComp/Team/index';
+import Menu from "../../components/СommonСomponents/Menu/Menu";
 
 
 const ManagmentDeportment = [require('../../components/Team/img/1.png'), require('../../components/Team/img/2.png'), require('../../components/Team/img/3.png'), require('../../components/Team/img/4.png')];
