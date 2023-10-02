@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from './WCB.module.css';
 import { Button, Row, Col, Container, } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 const WCB = () => {
+//     const width = window.innerWidth;
+//     if (width < 550){
+//         const ref=document.getElementById("colFirst");
+//     ref.setAttribute('col', '12');
+// } 
     return (
         <div className={styles.wrapper}>
             <Container fluid>
@@ -19,9 +25,9 @@ const WCB = () => {
                     </div>
                 </div>
                 <Row>
-                    <Col col={8}>
+                    <Col xs={12} sm={12} md={8}  xl={7}>
                         <div className={styles.reasons}>
-                        <div className={styles.reason}>
+                            <div className={styles.reason}>
                                 <div className={styles.icon}>
                                     <img src={require('./img/01.png')} alt="01" />
                                 </div>
@@ -95,7 +101,7 @@ const WCB = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col col={4} className={styles.imgCol}>
+                    <Col col={4} className={styles.imgCol} id='colFirst'>
                         <div className={styles.image}>
                             <img src={require('./img/R19 1.png')} alt="Money" className={styles.img1} />
                         </div>

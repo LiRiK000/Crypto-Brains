@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./NM.module.css";
 import { Container, Col, Row, Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NM = () => {
     return (
         <div className={styles.wrapper}>
             <Container fluid>
                 <Row>
-                    <Col col={6}>
+                    <Col xs={12} sm={12} md={8}  xl={7}>
                         <div className={styles.textSection}>
                             <h1 className={styles.title}>
                                 Never Miss Trading, Download Our Application
@@ -46,7 +47,7 @@ const NM = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col col={6} className={styles.imgCol}>
+                    <Col col={4} className={styles.imgCol}>
                         <div className={styles.imageSetction}>
                             <div className={styles.img1}>
                                 <img src={require('./img/1.png')} alt="Phone" className={styles.img1} />

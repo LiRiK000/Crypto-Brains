@@ -27,7 +27,7 @@
 
 .wrapper {
     max-height: max-content;
-    height: auto;
+    height: 60vh;
     width: 100%;
     background: var(--bg-main-bg-1, #131517);
 }
@@ -123,8 +123,8 @@
     width: auto;
 }
 
-@media screen and (max-width:549px) {
-    .imageSetction {
+@media screen and (max-width:767px) {
+    .imgCol {
         display: none;
     }
 }

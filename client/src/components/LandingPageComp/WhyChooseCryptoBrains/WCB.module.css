@@ -48,7 +48,8 @@
 }
 
 .reasons {
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .reason {
@@ -98,13 +99,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    opacity: 0.8;
+}
+.buttonText:hover{
+    color: #FFF;
+    opacity: 1;
 }
 
 .textBlock {
     display: flex;
     margin-bottom: 40px;
 }
-
+.icon{
+    opacity: 1;
+}
 
 .imgCol {
     display: flex;
@@ -118,13 +126,13 @@
     width: auto;
 }
 
-@media screen and (max-width:549px) {
+/* @media screen and (max-width:549px) {
     .img1 {
         display: none;
     }
-}
+} */
 
-/* 
+
 @media screen and (max-width: 693px) {
     .titleText {
         font-size: 38px;
@@ -153,4 +161,4 @@
     .subText {
         font-size: 8px;
     }
-} */
+}
