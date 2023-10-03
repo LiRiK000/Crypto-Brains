@@ -1,12 +1,13 @@
 import React, { FC } from "react";
-import Menu from "../../components/СommonСomponents/Menu/Menu";
-import Market from "../../components/LandingPageComp/MarketTrends/MarketTrends";
-import ST from "../../components/LandingPageComp/StartTraiding/ST";
-import NM from "../../components/LandingPageComp/NeverMiss/NM";
-import WCB from "../../components/LandingPageComp/WhyChooseCryptoBrains/WCB";
+import Menu from "components/СommonСomponents/Menu/Menu";
+import Market from "components/LandingPageComp/MarketTrends/MarketTrends";
+import ST from "components/LandingPageComp/StartTraiding/ST";
+import NM from "components/LandingPageComp/NeverMiss/NM";
+import WCB from "components/LandingPageComp/WhyChooseCryptoBrains/WCB";
+import MenuCont from "components/СommonСomponents/MenuContext/MenuContext";
 import styles from "./Home.module.css"
 
-
+// import TS from "../../components/LandingPageComp/TraidersSaying/TS";
 
 const images = [require('../../components/LandingPageComp/StartTraiding/img/1.png'), require('../../components/LandingPageComp/StartTraiding/img/1-1.png'), require('../../components/LandingPageComp/StartTraiding/img/1-2.png'), require('../../components/LandingPageComp/StartTraiding/img/1-3.png')];
 
@@ -20,9 +21,14 @@ const cardData = [
 ];
 
 const Home: FC = () => {
+    
+    
     return (
         <div className={styles.wrapper}>
-            <Menu />
+            <MenuCont />
+            {/* <Menu /> */}
+
+            {/* <TS /> */}
             <WCB />
             <Market />
             <ST image={images} cardData={cardData} />
