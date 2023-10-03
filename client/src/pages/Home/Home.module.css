@@ -19,3 +19,6 @@ img{
 html, body{
     overflow-x: hidden;
 }
+.wrapper{
+    background: var(--bg-main-bg-1, #131517);
+}
