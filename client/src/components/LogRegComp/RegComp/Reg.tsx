@@ -1,8 +1,8 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { Form } from "../Forms/Form";
-import { setUser } from "../../../store/slices/userSlice";
+import { Forms } from "../Forms/Form";
+import { setUser } from "store/slices/userSlice";
 
 const SignUp = () => {
     const dispatch = useDispatch();
@@ -25,7 +25,7 @@ const SignUp = () => {
     }
 
 return (
-    <Form
+    <Forms
         title="Register"
         handleClick={handleRegister}
     />
