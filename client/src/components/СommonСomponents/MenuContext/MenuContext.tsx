@@ -1,15 +1,15 @@
-import React from "react";
+import { FC } from "react";
+import MenuUnLog from "components/СommonСomponents/MenuUnLog/Menu";
+import MenuLog from 'components/СommonСomponents/MenuLog/Menu'
 import { useDispatch } from "react-redux";
 import { useAuth } from "hooks/use-auth";
-import Menu from "components/СommonСomponents/Menu/Menu";
 import { removeUser } from 'store/slices/userSlice';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
-const MenuCont = () => {
-    const dispatch = useDispatch();
+const MenuCont: FC = () => {
     let { isAuth, token, email, id } = useAuth();
     const storedToken = localStorage.getItem('token');
     const storedEmail = localStorage.getItem('email');
@@ -26,27 +26,9 @@ const MenuCont = () => {
     }
 
     return isAuth ? (
-        <>
-            <Menu />
-            <h1 className="text-white">Hello {email}
-            </h1>
-            <Button
-                variant="danger"
-                onClick={() => {
-                    window.location.reload();
-                    dispatch(removeUser());
-                    isAuth = false;
-                    localStorage.removeItem('token');
-                    localStorage.removeItem('email');
-                    localStorage.removeItem('id');
-                }
-                }
-            >
-                Log out from {email}
-            </Button>
-        </>
+        <MenuLog />
     ) : (
-        <Menu />
+        <MenuUnLog />
     )
 }
 

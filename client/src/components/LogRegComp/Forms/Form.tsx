@@ -70,7 +70,7 @@ const Forms: FC<IFormProps> = ({ title, handleClick }) => {
                 style={{ width: '100%', height: '56px' }}
                 onClick={() => handleClick(email, pass)}
             >
-                Login
+                {title}
             </Button>
         </Form>
 

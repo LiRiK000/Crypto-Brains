@@ -1,10 +1,25 @@
-import React, { useState } from "react";
+import { FC, useState } from "react";
 import styles from './Menu.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
+import { removeUser } from "store/slices/userSlice";
+import { useDispatch } from "react-redux";
+import { useAuth } from "hooks/use-auth";
+
 const Logo = require('./Logo.png');
 
-const Menu = () => {
+const MenuLog: FC = () => {
+    const dispatch = useDispatch();
+    let { isAuth, token, email, id } = useAuth();
+    const storedToken = localStorage.getItem('token');
+    const storedEmail = localStorage.getItem('email');
+    const storedId = localStorage.getItem('id');
+    if (storedEmail && storedToken && storedId) {
+        email = storedEmail
+        id = storedId
+        token = storedToken
+        isAuth = true;
+    }
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -44,17 +59,29 @@ const Menu = () => {
                                 &#9776;
                             </a>
                         </div>
-                        <div className={styles.btns}>
-                            <a href="/login">
-                                <Button variant="dark" className={styles.btn1}>
-                                    Login
+                        <div className={styles.user}>
+                            <div className={styles.userImg}>
+                                <img src={require('./userImg.png')} alt="Avatar" />
+                            </div>
+                            <div className={styles.userTextBlock}>
+                                <h1 className={styles.userName}>
+                                    Jerry Smith
+                                </h1>
+                                <Button
+                                    variant="danger"
+                                    onClick={() => {
+                                        window.location.reload();
+                                        dispatch(removeUser());
+                                        isAuth = false;
+                                        localStorage.removeItem('token');
+                                        localStorage.removeItem('email');
+                                        localStorage.removeItem('id');
+                                    }
+                                    }
+                                >
+                                    Log out from {email}
                                 </Button>
-                            </a>
-                            <a href="/register">
-                                <Button variant="primary" className={styles.btn2}>
-                                    Sign Up
-                                </Button>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,4 +90,4 @@ const Menu = () => {
     );
 }
 
-export default Menu;
+export default MenuLog;

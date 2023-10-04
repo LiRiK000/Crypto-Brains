@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import Menu from "components/СommonСomponents/Menu/Menu";
 import Market from "components/LandingPageComp/MarketTrends/MarketTrends";
 import ST from "components/LandingPageComp/StartTraiding/ST";
 import NM from "components/LandingPageComp/NeverMiss/NM";
@@ -26,7 +25,6 @@ const Home: FC = () => {
     return (
         <div className={styles.wrapper}>
             <MenuCont />
-            {/* <Menu /> */}
 
             {/* <TS /> */}
             <WCB />
