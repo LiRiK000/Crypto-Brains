@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from 'react-router';
 
 const ForgotPas = () => {
+    const navigate = useNavigate();
+    navigate('/')
     return (
-        <div>
-            <h1>Forgot Password</h1>
-        </div>
+        <>
+            
+        </>
     )
 }
 
