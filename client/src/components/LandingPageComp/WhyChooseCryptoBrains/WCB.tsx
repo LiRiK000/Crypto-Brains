@@ -1,16 +1,11 @@
-import React, { useRef } from "react";
+import { FC } from "react";
 import styles from './WCB.module.css';
 import { Button, Row, Col, Container, } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-const WCB = () => {
-//     const width = window.innerWidth;
-//     if (width < 550){
-//         const ref=document.getElementById("colFirst");
-//     ref.setAttribute('col', '12');
-// } 
+const WCB: FC = () => {
     return (
         <div className={styles.wrapper}>
             <Container fluid>

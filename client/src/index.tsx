@@ -1,18 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { Provider } from 'react-redux';
-import { store } from 'store';
+import {Provider} from 'react-redux';
+import {store} from 'store';
 import './firebase';
-
-
+import {DevSupport} from "@react-buddy/ide-toolbox";
+import {ComponentPreviews, useInitial} from "./dev";
 
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+    document.getElementById('root') as HTMLElement
 );
 root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
+    <Provider store={store}>
+        <DevSupport ComponentPreviews={ComponentPreviews}
+                    useInitialHook={useInitial}
+        >
+            <App/>
+        </DevSupport>
+    </Provider>
 );

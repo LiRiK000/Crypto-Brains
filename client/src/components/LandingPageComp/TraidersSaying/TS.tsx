@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import styles from './TS.module.css';
-import { Container, Row, Col, Carousel, Button } from 'react-bootstrap';
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
 
-const TS = () => {
+const TS: FC = () => {
     return (
         <Container fluid>
             <Row>

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { SignUp } from "components/LogRegComp/RegComp/Reg";
 
 

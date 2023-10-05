@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import styles from './Form.module.css';
 import { Form, FormGroup, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,28 +13,6 @@ const Forms: FC<IFormProps> = ({ title, handleClick }) => {
     const [pass, setPass] = useState('');
 
     return (
-        // <div>
-        //     <form>
-
-        //         <input
-        //             type="email"
-        //             placeholder="Email"
-        //             style={{width: '100%',height:'38px', marginBottom: '30px'}}
-        //             onChange={(e) => setEmail(e.target.value)}
-        //         />
-        //         <input
-        //         style={{width: '100%',height:'38px', marginBottom: '30px'}}
-        //         type="password"
-        //             placeholder="Password"
-        //         />
-        //         <Button
-        //         style={{width: '100%', height: '56px'}}
-        //         onClick={() => handleClick(email, pass)}
-        //         >
-        //             {title}
-        //         </Button>
-        //     </form>
-        // </div>
         <Form>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label

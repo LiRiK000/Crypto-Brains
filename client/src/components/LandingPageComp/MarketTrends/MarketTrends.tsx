@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import styles from './MarketTrends.module.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Card, Container, Button, Col, Row } from 'react-bootstrap';
@@ -7,15 +7,15 @@ import { Card, Container, Button, Col, Row } from 'react-bootstrap';
 
 
 const positive = require('./img/1.png');
-const negative = require('./img/2.png');
+// const negative = require('./img/2.png');
 const BTC = require('./img/BTC.png');
 const arrowUp = require('./img/arrowUp.png');
-const arrowDown = require('./img/arrowDown.png');
+// const arrowDown = require('./img/arrowDown.png');
 
 
 
 
-const MarketTrends = () => {
+const MarketTrends: FC = () => {
     return (
         <Container fluid className={styles.wrapper}>
             <>

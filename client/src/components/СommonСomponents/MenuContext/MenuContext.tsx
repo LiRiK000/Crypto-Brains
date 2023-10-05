@@ -1,11 +1,7 @@
 import { FC } from "react";
 import MenuUnLog from "components/СommonСomponents/MenuUnLog/Menu";
 import MenuLog from 'components/СommonСomponents/MenuLog/Menu'
-import { useDispatch } from "react-redux";
 import { useAuth } from "hooks/use-auth";
-import { removeUser } from 'store/slices/userSlice';
-import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 

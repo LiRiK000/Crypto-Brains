@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import TeamCards from 'components/TeamPageComp/Team/index';
 import TMP from "components/TeamPageComp/TeamMainPage/TMP";
 import MenuCont from "components/СommonСomponents/MenuContext/MenuContext";
@@ -24,7 +24,7 @@ const cardData = [
 ]
 
 
-const Team = () => {
+const Team: FC = () => {
 
 
 

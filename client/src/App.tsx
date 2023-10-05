@@ -7,7 +7,6 @@ import Error from "./pages/E404/Error";
 import Login from "./pages/Log-Reg/Log";
 import Reg from './pages/Log-Reg/Reg';
 import ForgotPas from "./pages/Log-Reg/ForgotPas";
-import { useAuth } from "hooks/use-auth";
 
 
 function App() {

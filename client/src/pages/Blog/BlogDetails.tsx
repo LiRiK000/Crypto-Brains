@@ -1,7 +1,7 @@
-import React from "react";
+import { FC } from "react";
 
 
-const BlogDetails = () => {
+const BlogDetails: FC = () => {
     return(
         <div>Blog Details</div>
     )
