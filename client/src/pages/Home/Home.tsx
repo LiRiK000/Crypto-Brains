@@ -5,6 +5,9 @@ import NM from "components/LandingPageComp/NeverMiss/NM";
 import WCB from "components/LandingPageComp/WhyChooseCryptoBrains/WCB";
 import MenuCont from "components/СommonСomponents/MenuContext/MenuContext";
 import styles from "./Home.module.css"
+import LandingMainPage from "components/LandingPageComp/LandingMainPage/LandingMainPage";
+import LandingRate from "components/LandingPageComp/LandingRate/LandingRate";
+import LandingQuestion from "components/LandingPageComp/LandingQuestion/LandingQuestion";
 
 // import TS from "../../components/LandingPageComp/TraidersSaying/TS";
 
@@ -27,10 +30,13 @@ const Home: FC = () => {
             <MenuCont />
 
             {/* <TS /> */}
+            <LandingMainPage/>
+            <LandingRate/>
             <WCB />
             <Market />
             <ST image={images} cardData={cardData} />
-            <NM />
+            <NM/><></>
+            <LandingQuestion/>
         </div>
 
     )

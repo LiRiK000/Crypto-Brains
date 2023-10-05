@@ -28,6 +28,10 @@
 .wrapper {
     min-height: 60vh;
     max-height: max-content;
+<<<<<<< Updated upstream
+=======
+    min-height: 60vh;
+>>>>>>> Stashed changes
     width: 100%;
     background: var(--bg-main-bg-1, #131517);
 }
