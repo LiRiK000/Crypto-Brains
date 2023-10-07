@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { FC, useState } from "react";
 import styles from './Menu.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
+
 const Logo = require('./Logo.png');
 
-const Menu = () => {
+const MenuUnLog: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -63,4 +64,4 @@ const Menu = () => {
     );
 }
 
-export default Menu;
+export default MenuUnLog;

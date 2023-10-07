@@ -1,10 +1,13 @@
-import React from "react";
+import { FC } from "react";
+import { useNavigate } from 'react-router';
 
-const ForgotPas = () => {
+const ForgotPas: FC = () => {
+    const navigate = useNavigate();
+    navigate('/')
     return (
-        <div>
-            <h1>Forgot Password</h1>
-        </div>
+        <>
+            
+        </>
     )
 }
 

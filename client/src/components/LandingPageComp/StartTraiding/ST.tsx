@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./ST.module.css";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 
@@ -11,7 +11,7 @@ interface ISTProps {
 
 
 
-const ST: React.FC<ISTProps> = (props) => {
+const ST: FC<ISTProps> = (props) => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.SectionName}>

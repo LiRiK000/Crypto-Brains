@@ -1,6 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-const NewPas = () => {
+const NewPas: FC = () => {
     return (
         <div>
             <h1>New Pas</h1>

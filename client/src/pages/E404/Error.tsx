@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Error.module.css';
 
-const Error = () => {
+const Error: FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.content}>

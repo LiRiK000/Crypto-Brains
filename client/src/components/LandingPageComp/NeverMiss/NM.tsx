@@ -1,9 +1,9 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./NM.module.css";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const NM = () => {
+const NM: FC = () => {
     return (
         <div className={styles.wrapper}>
             <Container fluid>

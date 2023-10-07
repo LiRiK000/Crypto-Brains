@@ -26,10 +26,10 @@
 
 
 .wrapper {
+    min-height: 60vh;
     max-height: max-content;
-    height: 60vh;
     width: 100%;
-    background: var(--bg-main-bg-1, #131517);
+    background: #131517;
 }
 
 .textSection {
@@ -39,8 +39,8 @@
 
 
 .title {
-    color: var(--White, #FFF);
-    font-family: 'Source Sans Pro';
+    color:  #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 58px;
     font-style: normal;
     font-weight: 700;
@@ -48,8 +48,8 @@
 }
 
 .subtitle {
-    color: var(--grey-paragraph-6, #ADB3BF);
-    font-family: 'Source Sans Pro';
+    color: #ADB3BF;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -59,6 +59,7 @@
 
 .buttonSection {
     margin-top: 80px;
+    margin-bottom: 120px;
 }
 
 
@@ -81,13 +82,14 @@
 }
 
 .btn {
-    border: 1px solid var(--gradiant-6, rgba(255, 255, 255, 0.10));
+    border: 1px solid rgba(255, 255, 255, 0.10);
     opacity: 0.8;
+    margin-bottom: 20px;
 }
 
 .btnText {
-    color: var(--White, #FFF);
-    font-family: 'Source Sans Pro';
+    color: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -97,7 +99,7 @@
 .btn:hover {
     border-radius: 4px;
     opacity: 2;
-    border: 1px solid var(--gradiant-6, rgba(255, 255, 255, 0.418));
+    border: 1px solid rgba(255, 255, 255, 0.418);
 }
 
 
