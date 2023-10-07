@@ -1,15 +1,11 @@
 import { FC, useState } from "react";
 import styles from './Menu.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { removeUser } from "store/slices/userSlice";
-import { useDispatch } from "react-redux";
-import { useAuth } from "hooks/use-auth";
 import { Link } from "react-router-dom";
 
 const Logo = require('./Logo.png');
 
 const MenuLog: FC = () => {
-    const dispatch = useDispatch();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -18,11 +14,6 @@ const MenuLog: FC = () => {
     }
 
     const menuClass = isMenuOpen ? "navigation responsive" : "navigation";
-    const handleLogout = () => {
-        window.location.reload();
-        dispatch(removeUser());
-        localStorage.clear();
-    };
     return (
         <header>
             <nav className={menuClass} onClick={toggleMenu}>
@@ -55,13 +46,30 @@ const MenuLog: FC = () => {
                         </div>
                         <div className={styles.user}>
                             <div className={styles.userTextBlock}>
-                                <div className={styles.userInfo}>
+                                <a
+                                    href="/profile"
+                                >
+                                    
+                                <div
+                                    className={styles.userInfo}
+                                    style={{
+                                        display:'flex'
+                                    }}
+                                >
+                                    <h1
+                                        className={styles.userName}
+                                        style={{
+                                            marginTop:'10px',
+                                            marginRight:'5px',
+                                            alignItems: 'center'
+                                        }}
+                                    >
+                                        Jerry Smith
+                                    </h1>
                                     <img src={require('./userImg.png')} alt=""/>
-                                    <h1 className={styles.userName}>Jerry Smith</h1>
                                 </div>
-                                <Link to="/profile" className={styles.profileLink}>
-      <span className={styles.profileLinkText}>Go to Profile</span>
-    </Link>
+                                </a>
+                                    
                             </div>
                         </div>
                     </div>

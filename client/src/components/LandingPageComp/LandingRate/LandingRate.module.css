@@ -1,17 +1,17 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.wrapper {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10%;
+/* Styling for card wrapper */
+.card_wrapper {
+    margin-top: 10% !important;
+    margin-right: 5% !important;
+    margin-left: 5% !important;
 }
 
 .Card {
-    margin-right: 20%;
-    justify-content: space-between;
+    margin-bottom: 20px !important;
 }
 
 .textUp {
@@ -20,8 +20,8 @@
 }
 
 .name {
-    color: var(--grey-paragraph-6, #ADB3BF);
-    font-family: Source Sans Pro;
+    color: #ADB3BF;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

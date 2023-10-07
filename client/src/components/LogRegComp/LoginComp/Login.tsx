@@ -5,12 +5,10 @@ import { useDispatch } from "react-redux";
 import { Container, Row, Col } from "react-bootstrap";
 import { setUser } from "store/slices/userSlice";
 import { useNavigate } from "react-router";
-import { useAuth } from "hooks/use-auth";
 import styles from "./Login.module.css";
 const Log: FC = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const { isAuth, token } = useAuth();
 
 
 

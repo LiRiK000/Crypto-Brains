@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-buddy/ide-toolbox": "^2.4.0",
     "@reduxjs/toolkit": "^1.9.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -10,8 +11,6 @@
     "@types/axios": "^0.14.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.54",
-    "@types/react": "^18.2.23",
-    "@types/react-dom": "^18.2.7",
     "axios": "^1.5.1",
     "bootstrap": "^5.3.2",
     "firebase": "^10.4.0",
@@ -31,8 +30,7 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4",
-    "@react-buddy/ide-toolbox": "^2.4.0"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -60,7 +58,11 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/bootstrap": "^5.2.7",
     "@types/parallax-js": "^3.1.1",
+    "@types/react": "^18.2.25",
+    "@types/react-bootstrap": "^0.32.33",
+    "@types/react-dom": "^18.2.10",
     "css-loader": "^6.8.1",
     "style-loader": "^3.3.3"
   }

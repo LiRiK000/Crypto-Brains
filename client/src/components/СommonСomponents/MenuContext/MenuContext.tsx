@@ -15,10 +15,6 @@ const MenuCont: FC = () => {
         id = storedId
         token = storedToken
         isAuth = true;
-        console.log(email)
-        console.log(token)
-        console.log(id)
-        console.log(isAuth)
     }
 
     return isAuth ? (

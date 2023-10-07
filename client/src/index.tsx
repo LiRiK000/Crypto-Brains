@@ -4,8 +4,6 @@ import App from './App';
 import {Provider} from 'react-redux';
 import {store} from 'store';
 import './firebase';
-import {DevSupport} from "@react-buddy/ide-toolbox";
-import {ComponentPreviews, useInitial} from "./dev";
 
 
 const root = ReactDOM.createRoot(
@@ -13,10 +11,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <Provider store={store}>
-        <DevSupport ComponentPreviews={ComponentPreviews}
-                    useInitialHook={useInitial}
-        >
             <App/>
-        </DevSupport>
     </Provider>
 );
