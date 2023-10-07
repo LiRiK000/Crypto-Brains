@@ -1,37 +1,44 @@
 import React, { FC, useState } from 'react';
-import { Button, Card, Container, ListGroup, Row, Col } from 'react-bootstrap';
+import { Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { removeUser } from '../../../store/slices/userSlice';
 import { useDispatch } from 'react-redux';
 import { useAuth } from '../../../hooks/use-auth';
 import styles from './SBP.module.css';
 
+interface ITab {
+    content: React.ReactNode;
+}
+
 interface IProps {
-    title: string;
-    TabCount: number;
-    TabsContent: string[];
+    tabs: ITab[],
+    title: string,
+    TabCount: number,
+    TabsContent: Array<string>
 }
 
 const Sbp: FC<IProps> = (props) => {
     const dispatch = useDispatch();
-    let { isAuth, token, email, id } = useAuth();
-    const storedToken = localStorage.getItem('token');
-    const storedEmail = localStorage.getItem('email');
-    const storedId = localStorage.getItem('id');
-
-    const [activeTab, setActiveTab] = useState(0); // Устанавливаем начальное значение активной вкладки на 0
-
-    if (storedEmail && storedToken && storedId) {
-        email = storedEmail;
-        id = storedId;
-        token = storedToken;
-        isAuth = true;
-    } else window.location.replace('/');
-
+    let {isAuth, token, email, id} = useAuth();
+    const [activeTab, setActiveTab] = useState(0);
     const handleLogout = () => {
         window.location.reload();
         dispatch(removeUser());
         localStorage.clear();
+        console.log(email)
     };
+
+
+    const storedEmail = localStorage.getItem('email');
+    const storedId = localStorage.getItem('id');
+
+    if (storedEmail && storedId) {
+        email = storedEmail
+        id = storedId
+        isAuth = true;
+    } else (
+        window.location.replace('/')
+    )
+
 
     return (
         <>
@@ -40,7 +47,7 @@ const Sbp: FC<IProps> = (props) => {
                     <Col
                         xxl={3}
                         xl={3}
-                        lg={4}
+                        lg={3}
                         md={6}
                         sm={12}
                         xs={12}
@@ -51,7 +58,7 @@ const Sbp: FC<IProps> = (props) => {
                             style={{
                                 marginTop: '20px',
                                 marginRight: '24px',
-                                marginLeft: '24px',
+                                marginLeft: '14px',
                                 backgroundColor: '#1E1F25',
                                 minWidth: '20%',
                                 display: 'flex',
@@ -72,36 +79,46 @@ const Sbp: FC<IProps> = (props) => {
                                     style={{
                                         marginBottom: '10px',
                                         alignItems: 'center',
+                                        padding: '10px',
                                     }}
                                 >
-                                    {props.TabsContent.map((tab, index) => (
+                                    {props.tabs.map((tab, index) => (
                                         <Button
                                             key={index}
                                             variant={activeTab === index ? 'primary' : ''}
                                             style={{
-                                                width: '100%',
-                                                marginBottom:'10px',
                                                 display: 'flex',
+                                                width: '100%',
+                                                marginBottom: '10px'
                                             }}
-                                            onClick={() => setActiveTab(index)}
+                                            onClick={() => setActiveTab(index)} // Устанавливаем активную вкладку
                                         >
                                             <h1
                                                 className={styles.tabText}
                                             >
-                                                {tab}
+                                                {props.TabsContent[index]}
                                             </h1>
                                         </Button>
                                     ))}
+
+                                    <Button
+                                        variant="danger"
+                                        onClick={handleLogout}
+                                        className="btn-block"
+                                        style={{
+                                            marginTop:'10px',
+                                            marginBottom: '10px',
+                                            width:'100%'
+                                        }}
+                                    >
+                                        Log Out from {email}
+                                    </Button>
                                 </Card.Text>
-                                <Button
-                                    variant="danger"
-                                    onClick={handleLogout}
-                                    className="btn-block"
-                                >
-                                    Log Out from {email}
-                                </Button>
                             </Card.Body>
                         </Card>
+                    </Col>
+                    <Col xxl={9} xl={9} lg={9} md={6} sm={12} xs={12} xxs={12}>
+                        {props.tabs[activeTab].content} {/* Отображаем содержимое активной вкладки */}
                     </Col>
                 </Row>
             </Container>
