@@ -1,14 +1,16 @@
-import { FC } from "react";
-import { Forms } from "../Forms/Form";
+import { Form } from "../Forms/Form";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useDispatch } from "react-redux";
-import { Container, Row, Col } from "react-bootstrap";
-import { setUser } from "store/slices/userSlice";
+import { setUser } from "../../../store/slices/userSlice";
 import { useNavigate } from "react-router";
-import styles from "./Login.module.css";
-const Log: FC = () => {
+import { useAuth } from "hooks/use-auth";
+import { stringify } from "querystring";
+import React from "react";
+
+const Log = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const { isAuth, token } = useAuth();
 
 
 
@@ -24,11 +26,14 @@ const Log: FC = () => {
                     id: user.uid,
                     emailVerified: user.emailVerified
                 }));
-                if (user.refreshToken && user.email && user.uid) {
+                if (user.refreshToken){
                     localStorage.setItem('token', user.refreshToken);
+                }
+                if (user.email){
                     localStorage.setItem('email', user.email);
+                }
+                if (user.uid){
                     localStorage.setItem('id', user.uid);
-                    console.log(user);
                 }
                 navigate('/')
             })
@@ -37,83 +42,9 @@ const Log: FC = () => {
     }
     localStorage.setItem('currentUser', JSON.stringify(setUser));
     return (
-        <>
-            <Container fluid className={styles.wrapper}>
-                <Row className={styles.content}>
-                    <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={12} col={12}>
-                        <div className={styles.textBlock}>
-                            <h1 className={styles.title}>Login</h1>
-                        </div>
-                        <div className={styles.form}>
-                            <Forms
-                                title="Login"
-                                handleClick={handleLogin}
-                            />
-                        </div>
-                        <div className={styles.FP}>
-                            <a
-                                href="/forgot-pass"
-                                style={{
-                                    textDecoration: 'none'
-                                }}>
-                                <h1
-                                    className={styles.FPText}
-                                    style={{
-                                        color: '#ECEEF0',
-                                        fontFamily: 'sans-serif',
-                                        fontSize: '16px',
-                                        fontStyle: 'normal',
-                                        fontWeight: '600',
-                                    }}
-                                >
-                                    Forgot Password?
-                                </h1>
-                            </a>
-                        </div>
-                        <div className={styles.FP}>
-                            <a
-                                href="/register"
-                                style={{
-                                    textDecoration: 'none'
-                                }}>
-                                <h1
-                                    className={styles.FPText2}
-                                    style={{
-                                        color: '#ECEEF0',
-                                        fontFamily: 'sans-serif',
-                                        fontSize: '16px',
-                                        fontStyle: 'normal',
-                                        fontWeight: '600',
-                                    }}
-                                >
-                                    Don’t Have an Account? Sign Up Here
-                                </h1>
-                            </a>
-                        </div>
-                        <div className={styles.FP}>
-                            <a
-                                href="/"
-                                style={{
-                                    textDecoration: 'none'
-                                }}>
-                                <h1
-                                    className={styles.FPText3}
-                                    style={{
-                                        color: '#ECEEF0',
-                                        fontFamily: 'sans-serif',
-                                        fontSize: '16px',
-                                        fontStyle: 'normal',
-                                        fontWeight: '600',
-                                    }}
-                                >
-                                    Home
-                                </h1>
-                            </a>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </>
+        <Form title={""} handleClick={function (email: string, pass: string): void {
+            throw new Error("Function not implemented.");
+        } }/>
     )
 }
 

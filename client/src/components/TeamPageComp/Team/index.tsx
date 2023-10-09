@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React from 'react';
 import styles from './index.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Container, Col, Row } from 'react-bootstrap';
@@ -9,7 +9,7 @@ interface ITeamProps {
     sectionName: string;
 }
 
-const TeamCards: FC<ITeamProps> = (props) => {
+const TeamCards: React.FC<ITeamProps> = (props) => {
     return (
         <Container fluid className={styles.wrapper}>
             <>

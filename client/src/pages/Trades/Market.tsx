@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from "react";
 
-const Market: FC = () => {
+const Market = () => {
     return (
         <div>
             Market

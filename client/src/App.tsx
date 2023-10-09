@@ -1,5 +1,4 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from './pages/Team/Team';
 import NewPas from './pages/Log-Reg/NewPas';
@@ -8,7 +7,7 @@ import Error from "./pages/E404/Error";
 import Login from "./pages/Log-Reg/Log";
 import Reg from './pages/Log-Reg/Reg';
 import ForgotPas from "./pages/Log-Reg/ForgotPas";
-import MyProfile from "./pages/Profile/MyProfile";
+import { useAuth } from "hooks/use-auth";
 
 
 function App() {
@@ -35,8 +34,6 @@ function App() {
                 <Route path="/career" element={<About />} />
 
                 <Route path="/career" element={<About />} />
-
-                <Route path='/profile' element={<MyProfile />} />
 
                 <Route path="*" element={<Error />} />
 

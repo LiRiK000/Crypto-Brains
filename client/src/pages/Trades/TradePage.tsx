@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from "react";
 
-const TradePage: FC = () =>{
+const TradePage = () =>{
     return(
         <div>Trade Page</div>
     )

@@ -1,4 +1,6 @@
-import { FC } from "react";
+import React, { FC } from "react";
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import Menu from "components/СommonСomponents/Menu/Menu";
 import Market from "components/LandingPageComp/MarketTrends/MarketTrends";
 import ST from "components/LandingPageComp/StartTraiding/ST";
 import NM from "components/LandingPageComp/NeverMiss/NM";
@@ -8,8 +10,9 @@ import styles from "./Home.module.css"
 import LandingMainPage from "components/LandingPageComp/LandingMainPage/LandingMainPage";
 import LandingRate from "components/LandingPageComp/LandingRate/LandingRate";
 import LandingQuestion from "components/LandingPageComp/LandingQuestion/LandingQuestion";
+import LFooter from "components/LandingPageComp/LandingFooter/LFooter";
 
-// import TS from "components/LandingPageComp/TraidersSaying/TS";
+// import TS from "../../components/LandingPageComp/TraidersSaying/TS";
 
 const images = [require('../../components/LandingPageComp/StartTraiding/img/1.png'), require('../../components/LandingPageComp/StartTraiding/img/1-1.png'), require('../../components/LandingPageComp/StartTraiding/img/1-2.png'), require('../../components/LandingPageComp/StartTraiding/img/1-3.png')];
 
@@ -24,19 +27,12 @@ const cardData = [
 
 const Home: FC = () => {
     
-    
     return (
         <div className={styles.wrapper}>
             <MenuCont />
-
-            {/* <TS /> */}
             <LandingMainPage/>
-            <LandingRate/>
-            <WCB />
-            <Market />
-            <ST image={images} cardData={cardData} />
-            <NM/><></>
             <LandingQuestion/>
+            <LFooter/>
         </div>
 
     )
