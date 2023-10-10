@@ -42,7 +42,7 @@ const Sbp: FC<IProps> = (props) => {
 
     return (
         <>
-            <Container fluid className={styles.wrapper}>
+            <Container fluid>
                 <Row>
                     <Col
                         xxl={3}
@@ -52,7 +52,6 @@ const Sbp: FC<IProps> = (props) => {
                         sm={12}
                         xs={12}
                         xxs={12}
-                        className={styles.sidebar}
                     >
                         <Card
                             style={{
