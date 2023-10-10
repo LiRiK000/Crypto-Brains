@@ -1,7 +1,6 @@
 import { FC, useState } from "react";
 import styles from './Menu.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from "react-router-dom";
 
 const Logo = require('./Logo.png');
 
@@ -45,7 +44,7 @@ const MenuLog: FC = () => {
                             </a>
                         </div>
                         <div className={styles.user}>
-                            <div className={styles.userTextBlock}>
+                            <div>
                                 <a
                                     href="/profile"
                                 >
