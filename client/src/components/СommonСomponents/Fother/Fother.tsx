@@ -1,6 +1,6 @@
-import React, {FC} from "react";
+import React, {useState} from "react";
 
-const Fother: FC = () => {
+const Fother = () => {
     
 
 

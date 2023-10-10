@@ -1,60 +1,37 @@
-import { FC, useState } from "react";
-import styles from './Form.module.css';
-import { Form, FormGroup, FormControl, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React, { FC, useState } from "react";
+import { Button } from "react-bootstrap";
 
 interface IFormProps {
     title: string,
     handleClick: (email: string, pass: string) => void
 }
-const Forms: FC<IFormProps> = ({ title, handleClick }) => {
+const Form:FC<IFormProps> = ({title, handleClick}) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
     return (
-        <Form>
-            <Form.Group controlId="formBasicEmail">
-                <Form.Label
-                    className="text-white"
-                >
-                    Email address
-                </Form.Label>
-                <Form.Control
-                    className={styles.formControl}
+        <div>
+            <form>
+                <input
                     type="email"
                     placeholder="Email"
                     onChange={(e) => setEmail(e.target.value)}
-                    style={{ width: '100%', height: '38px', marginBottom: '30px', background:'#131517' }}
                 />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-                <Form.Label
-                    className="text-white"
-                >
-                    Password
-                </Form.Label>
-                <Form.Control
-                    className={styles.formControl}
+                <input
                     type="password"
                     placeholder="Password"
                     onChange={(e) => setPass(e.target.value)}
-                    style={{ width: '100%', height: '38px', marginBottom: '40px', background:'#131517' }}
                 />
-            </Form.Group>
-
-            <Button
-                style={{ width: '100%', height: '56px' }}
+                <Button
                 onClick={() => handleClick(email, pass)}
-            >
-                {title}
-            </Button>
-        </Form>
-
+                >
+                    {title}
+                </Button>
+            </form>
+        </div>
     )
 }
 
 
 
-export { Forms };
+export { Form };

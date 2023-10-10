@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from "react";
 
-const FAQMobile: FC = () => {
+const FAQMobile = () => {
     return (
         <div className="faq-mobile">
             FAQ

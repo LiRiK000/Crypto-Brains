@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from "react";
 
-const TradePageMobile: FC = () =>{
+const TradePageMobile = () =>{
     return(
         <div>TradePageMobile</div>
     )

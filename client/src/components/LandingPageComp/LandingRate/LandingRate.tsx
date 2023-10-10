@@ -7,8 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const LandingRate = () => {
 
     return (
-        <Container fluid>
-            <div className={styles.card_wrapper}>
+        <Container fluid className={styles.wrapper}>
                     <Row>
                         {Array.from({ length: 6 }).map((_, index) => (
                             <Col xxl xl={3} lg={3} md={6} sm={12} xs={12} xxs={12} key={index}>
@@ -26,7 +25,6 @@ const LandingRate = () => {
                             </Col>
                         ))}
                     </Row>
-            </div>
         </Container>
     )
 

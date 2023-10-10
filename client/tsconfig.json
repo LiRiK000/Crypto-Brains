@@ -2,6 +2,11 @@
   "compilerOptions": {
     "target": "es5",
     "baseUrl": "src",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "typeRoots": ["./node_modules/@types", "./typings"],
+    "jsx": "react",
     "lib": [
       "dom",
       "dom.iterable",
@@ -14,14 +19,14 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noEmit": true
   },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": [
+    "node_modules"
+    ]
 }
