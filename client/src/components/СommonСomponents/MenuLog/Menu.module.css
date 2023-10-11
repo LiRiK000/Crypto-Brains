@@ -7,7 +7,7 @@
 
 header {
     width: 100%;
-    background: var(--bg-card-bg-2, #1E1F25);
+    background: #1E1F25;
     border-bottom: #1B70F1 1px solid;
 }
 
@@ -52,8 +52,8 @@ header {
 }
 
 .nav_text {
-    color: var(--grey-paragraph-6, #ADB3BF);
-    font-family: 'Source Sans Pro';
+    color: #ADB3BF;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -65,28 +65,62 @@ header {
 }
 
 .nav_text:hover {
-    color: var(--White, #FFF);
+    color: #FFF;
     opacity: 1.2;
 }
 
 .user {
-    border-radius: 4px !important;
-    padding: 23px 26px !important;
+    border-radius: 4px;
+    padding: 23px 26px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.userTextBlock{
-    margin-left:10px;   
-    justify-content:center;
-    align-items:center;
+
+.userInfo {
+    display: flex;
+    align-items: center;
 }
+
+.userAvatar {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+}
+
 .userName {
-    color: var(--grey-2, #ECEEF0);
+    color: #ECEEF0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 26px;
-    font-style: normal;
     font-weight: 600;
     line-height: 32px;
 }
+.profileLink {
+    text-decoration: none;
+    width: 120%;
+    display: flex;
+    margin-top: 5px; /* Добавьте верхний отступ по вашему желанию */
+    justify-content: center;
+    align-items: center;
+}
+
+.profileLinkText {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+  .profileLinkText:hover {
+    background-color:  #0056b3;
+  }
+
+
+
 
 @media screen and (max-width: 1415px) {
     .nav-text {
@@ -101,9 +135,8 @@ header {
         display: none;
     }
 
-    .wrapper a.icon {
-        float: right;
-        margin-top: 0px;
+    header a.icon {
+        float: right !important;
         display: block;
         font-size: 50px;
     }
@@ -125,19 +158,18 @@ header {
     .navigation.responsive a.icon {
         position: absolute;
         top: -60px;
-        right: 0px;
     }
 
     .navigation.responsive {
         position: relative;
         top: 50px;
-        left: 0px;
+        left: -50px;
     }
 
     .navigation.responsive a {
         font-size: 30px !important;
         float: none;
-        display: block;
+        display: block !important;
         text-align: left;
     }
 }

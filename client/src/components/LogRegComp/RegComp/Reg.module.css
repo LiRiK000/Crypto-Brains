@@ -2,24 +2,21 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background: #131517;
     height: 100vh;
-    background-image: url('./img/1.png');
-    background-repeat: no-repeat;
-    background-position: right;
+    background: #131517 url('./img/1.png') no-repeat right;
 }
 
 
 .textBlock {
     margin-bottom: 60px;
-    width: 170%;
+    width: 130%;
 }
 .content{
     margin-left: 10%;
     margin-right: 10%;
 }
 .form{
-    width: 170%;
+    width: 130%;
     margin-right: 5%;
 }
 
@@ -36,7 +33,7 @@
 .FP{
     margin-top: 25px;
     margin-bottom: 30px;
-    width: 170%;
+    width: 130%;
     display: flex;
     align-items: center;
     justify-content: center;

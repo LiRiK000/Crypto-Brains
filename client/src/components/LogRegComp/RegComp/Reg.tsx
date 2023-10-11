@@ -1,3 +1,4 @@
+import React, { FC } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
@@ -6,11 +7,11 @@ import styles from './Reg.module.css'
 import { setUser } from "store/slices/userSlice";
 import { Col, Container, Row } from "react-bootstrap";
 
-const SignUp = () => {
+const SignUp: FC = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    
+
     const handleRegister = (email: string, password: string) => {
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password)
@@ -26,8 +27,8 @@ const SignUp = () => {
             .catch (console.error);
     }
 
-return (
-    <>
+    return (
+        <>
             <Container fluid className={styles.wrapper}>
                 <Row className={styles.content}>
                     <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={12} col={12}>
@@ -104,7 +105,7 @@ return (
                 </Row>
             </Container>
         </>
-)
+    )
 }
 
 

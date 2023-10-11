@@ -6,8 +6,8 @@ import { SignUp } from "components/LogRegComp/RegComp/Reg";
 
 const Reg: FC = () => {
     return (
-        <SignUp />
-    )
+        <SignUp/>
+    );
 };
 
 export default Reg;
