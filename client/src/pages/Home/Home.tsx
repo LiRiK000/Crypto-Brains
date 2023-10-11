@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import Menu from "components/СommonСomponents/Menu/Menu";
 import Market from "components/LandingPageComp/MarketTrends/MarketTrends";
 import ST from "components/LandingPageComp/StartTraiding/ST";
 import NM from "components/LandingPageComp/NeverMiss/NM";
