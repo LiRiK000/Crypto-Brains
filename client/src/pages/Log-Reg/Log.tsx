@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Log } from '../../components/LogRegComp/LoginComp/Login';
+import { Log } from '../../components/PageComponents/LogRegComp/LoginComp/Login';
 
 
 
