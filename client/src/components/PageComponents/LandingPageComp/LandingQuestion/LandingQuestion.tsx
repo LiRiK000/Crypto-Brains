@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row, Accordion } from "react-bootstrap";
-import styles from "../LandingQuestion/LandingQuestion.module.css";
+import styles from "./LandingQuestion.module.css";
 
 
 const LandingQuestion = () => {

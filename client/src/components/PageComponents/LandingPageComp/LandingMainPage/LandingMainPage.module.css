@@ -77,12 +77,12 @@
 .buttonSection {
     display: inline-flex;
     align-items: center;
+    margin-left: 1%;
     gap: 30px;
+    margin-top: 3%;
 }
 
 .btn1{
-    margin-left: 1%;
-    margin-top: 3%;
     width: 200px;
     height: 56px;
     padding: 13px 26px;
@@ -93,14 +93,7 @@
     background: var(--primary-9, #1B70F1);
     align-self: stretch;
 }
-
-.btn2:hover{
-    background:none;
-    border-color: #F7FAFF;
-}
-
 .btn2 {
-    margin-top: 3%;
     width: 200px;
     height: 56px;
     padding: 13px 26px;
@@ -113,6 +106,16 @@
     border-color: #F7FAFF;
 
 }
+
+.btn2:hover{
+    background:none;
+    border-color: #F7FAFF;
+}
+.btn2:active, .btn2:focus{
+    background-color: rgba(255, 255, 255, 0.01) !important;
+}
+
+
 
 @media (min-width:320px) and (max-width:500px) {
     .buttonSection {

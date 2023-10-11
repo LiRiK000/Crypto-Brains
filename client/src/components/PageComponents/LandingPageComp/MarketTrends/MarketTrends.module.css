@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
-    src: url(../../../../public/fonts/SourceSans3-VariableFont_wght.ttf);
+    src: url(../../../../../public/fonts/SourceSans3-VariableFont_wght.ttf);
 }
 
 @font-face {
@@ -21,7 +21,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-    src: url(../../../../public/fonts/SourceSans3-Regular.ttf);
+    src: url(../../../../../public/fonts/SourceSans3-Regular.ttf);
 }
 
 /* Styling for the wrapper element */

@@ -3,10 +3,10 @@ import MenuCont from "components/СommonСomponents/MenuContext/MenuContext";
 import Sbp from "components/СommonСomponents/SideBar/SBP";
 import { useAuth } from "hooks/use-auth";
 import styles from './MyProfile.module.css'
-import MyProfile from "../../components/ProfileComp/1.MyProfile/MyProfile";
+import MyProfile from "../../components/PageComponents/ProfileComp/1.MyProfile/MyProfile";
 import Home from "../Home/Home";
 import MenuUnLog from "../../components/СommonСomponents/MenuUnLog/Menu";
-import Po from "../../components/ProfileComp/5.PaymentOption/PO"; //Payment Option
+import Po from "../../components/PageComponents/ProfileComp/5.PaymentOption/PO"; //Payment Option
 
 const content: Array<string> = [
     'My Profile',

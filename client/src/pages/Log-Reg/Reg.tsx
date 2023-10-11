@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { SignUp } from "components/LogRegComp/RegComp/Reg";
+import { SignUp } from "components/PageComponents/LogRegComp/RegComp/Reg";
 
 
 

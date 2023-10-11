@@ -2,11 +2,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background: #131517;
     height: 100vh;
-    background-image: url('./img/1.png');
-    background-repeat: no-repeat;
-    background-position: right;
+    background: #131517 url('img/1.png') no-repeat right;
 }
 
 
