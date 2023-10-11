@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import {Button, Row, Col, Container, Card} from "react-bootstrap";
 import styles from './PO.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';

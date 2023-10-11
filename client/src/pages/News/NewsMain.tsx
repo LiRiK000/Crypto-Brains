@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import MenuCont from "components/СommonСomponents/MenuContext/MenuContext";
 import NewsContent from "components/BlogComp/NewsComp/NewsContent/NewsContent";
 
-const NewsMain = () => {
+const NewsMain: FC = () => {
     return (
         <>
             <MenuCont />

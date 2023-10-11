@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import MenuCont from "components/СommonСomponents/MenuContext/MenuContext";
 import Sbp from "components/СommonСomponents/SideBar/SBP";
 import { useAuth } from "hooks/use-auth";

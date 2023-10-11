@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import React, {FC} from 'react';
 import styles from './MyProfile.module.css'
 const MyProfile: FC = () => {
     return (
