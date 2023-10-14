@@ -6,6 +6,8 @@ import Error from "./pages/E404/Error";
 import Login from "./pages/Log-Reg/Log";
 import Reg from './pages/Log-Reg/Reg';
 import MyProfilePage from "./pages/Profile/MyProfile";
+import NewsMain from "./pages/News/NewsMain";
+import NewsDetails from "./pages/News/NewsDetails";
 
 
 function App() {
@@ -30,6 +32,10 @@ function App() {
                 <Route path="/career" element={<About />} />
 
                 <Route path="/profile" element={<MyProfilePage />} />
+
+                <Route path="/News" element={<NewsMain />} />
+
+                <Route path="/News-detail" element={<NewsDetails />} />
 
 
                 <Route path="*" element={<Error />} />

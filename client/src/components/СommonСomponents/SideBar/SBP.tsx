@@ -18,7 +18,7 @@ interface IProps {
 
 const Sbp: FC<IProps> = (props) => {
     const dispatch = useDispatch();
-    let {isAuth, token, email, id} = useAuth();
+    let  {email} = useAuth();
     const [activeTab, setActiveTab] = useState(0);
     const handleLogout = () => {
         window.location.reload();
@@ -33,8 +33,6 @@ const Sbp: FC<IProps> = (props) => {
 
     if (storedEmail && storedId) {
         email = storedEmail
-        id = storedId
-        isAuth = true;
     } else (
         window.location.replace('/')
     )
@@ -81,8 +79,8 @@ const Sbp: FC<IProps> = (props) => {
                                         padding: '10px',
                                     }}
                                 >
-                                    {props.tabs.map((tab, index) => (
-                                        <Button
+                                    {props.tabs.map(function (tab, index) {
+                                        return <Button
                                             key={index}
                                             variant={activeTab === index ? 'primary' : ''}
                                             style={{
@@ -97,8 +95,8 @@ const Sbp: FC<IProps> = (props) => {
                                             >
                                                 {props.TabsContent[index]}
                                             </h1>
-                                        </Button>
-                                    ))}
+                                        </Button>;
+                                    })}
 
                                     <Button
                                         variant="danger"
