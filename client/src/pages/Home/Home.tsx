@@ -3,7 +3,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import MenuCont from "components/СommonСomponents/MenuContext/MenuContext"
 import LandingMainPage from "components/PageComponents/LandingPageComp/LandingMainPage/LandingMainPage"
 import LandingQuestion from "components/PageComponents/LandingPageComp/LandingQuestion/LandingQuestion"
-import LFooter from "components/СommonСomponents/LandingFooter/LFooter"
+import LFooter from "components/СommonСomponents/Footer/LFooter"
 // import TS from "components/LandingPageComp/TradersSaying/TS"
 import styles from "./Home.module.css"
 

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import MenuCont from "components/СommonСomponents/MenuContext/MenuContext";
 import NewsContent from "components/PageComponents/BlogComp/NewsComp/NewsContent/NewsContent";
 import Nr from "components/PageComponents/BlogComp/NewsComp/NewsRelated/NR";
-import LFooter from "components/СommonСomponents/LandingFooter/LFooter";
+import LFooter from "components/СommonСomponents/Footer/LFooter";
 import './News.css';
 
 
@@ -21,12 +21,12 @@ const images: string[] =[
     require('./NewsContentImg/12.png'),
 ];
 
-const imagesNR: string[] = [
+const imagesNR : string[] = [
     require('./RelatedNewsImg/1.png'),
     require('./RelatedNewsImg/2.png'),
     require('./RelatedNewsImg/3.png'),
     require('./RelatedNewsImg/4.png')
-]
+];
 const title: string = 'Crypto Has New Announcement About Russia And ...'
 const NewsMain: FC = () => {
     return (

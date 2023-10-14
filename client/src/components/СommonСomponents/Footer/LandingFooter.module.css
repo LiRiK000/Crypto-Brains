@@ -66,15 +66,19 @@ h1.title {
 
 .title {
     font-size: 100%;
-    font-family: 'Source Sans Pro';
     color:#FDFDFD;
 }
 
 .text {
     margin-top: 10%;
-    color: #afb1b6 !important;
+    color: #afb1b6;
+    transition: all 0.3s ease;
 }
-
+.text:hover {
+    margin-top: 10%;
+    color: #FFF;
+    transition: all 0.3s ease;
+}
 .aboutUs {
     display: flex;
     align-items: center;

@@ -2,7 +2,7 @@ import React from "react";
 import TeamCards from 'components/PageComponents/TeamPageComp/Team/index';
 import TMP from "components/PageComponents/TeamPageComp/TeamMainPage/TMP";
 import MenuCont from "components/СommonСomponents/MenuContext/MenuContext";
-import LFooter from "components/СommonСomponents/LandingFooter/LFooter";
+import LFooter from "components/СommonСomponents/Footer/LFooter";
 
 
 
