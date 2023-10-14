@@ -1,0 +1,26 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a, a:visited, a:hover, a:active, a:focus{
+	text-decoration: none;
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px;
+	src: url(../public/fonts/SourceSans3-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: 'Source Sans Regular';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	src: url(../public/fonts/SourceSans3-Regular.ttf);
+}

@@ -73,13 +73,13 @@ const TS = () => {
 
                     {/* <Carousel className={styles.car}>
                         <Carousel.Item>
-                            <img className={styles.imgCar} src={require('./img/img1.jpg')} alt="" />
+                            <RelatedNewsImg className={styles.imgCar} src={require('./RelatedNewsImg/img1.jpg')} alt="" />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className={styles.imgCar} src={require('./img/img1.jpg')} alt="" />
+                            <RelatedNewsImg className={styles.imgCar} src={require('./RelatedNewsImg/img1.jpg')} alt="" />
                         </Carousel.Item>
                         <Carousel.Item>
-                            <img className={styles.imgCar} src={require('./img/img1.jpg')} alt="" />
+                            <RelatedNewsImg className={styles.imgCar} src={require('./RelatedNewsImg/img1.jpg')} alt="" />
                         </Carousel.Item>
                     </Carousel> */}
                 </Col>
