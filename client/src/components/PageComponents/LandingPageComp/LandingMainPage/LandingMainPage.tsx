@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./LandingMainPage.module.css";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { all } from "axios";
+import img from "./img/arrow.png"
 
 
 
 const LandingMainPage = () => {
-    
+
     return (
         <div className={styles.wrapper}>
             <Container fluid>
@@ -27,21 +27,30 @@ const LandingMainPage = () => {
                             </div>
                         </div>
                         <div className={styles.buttonSection}>
-                                <Button className={styles.btn1}>Start Now <img src={require('./img/arrow.png')} alt="" /></Button>
-                                <Button className={styles.btn2}>Beginner’s Guide</Button>
+                            <a href="/login">
+                                <Button className={styles.btn1}>
+                                    Start Now
+                                    <img src={img} alt=""/>
+                                </Button>
+                            </a>
+                            <a href="/beginner">
+                                <Button className={styles.btn2}>
+                                    Beginner’s Guide
+                                </Button>
+                            </a>
                         </div>
                     </Col>
                     <Col col={4} md={0} lg={4} className={styles.imgCol}>
                         <div className={styles.imageSetction}>
                             <div className={styles.img1}>
-                                <img src={require('./img/laptop.png')} alt="Laprop" className={styles.img1} />
+                                <img src={require('./img/laptop.png')} alt="Laprop" className={styles.img1}/>
                             </div>
                         </div>
                     </Col>
                 </Row>
             </Container>
         </div>
-    )
+    );
 
 } 
 

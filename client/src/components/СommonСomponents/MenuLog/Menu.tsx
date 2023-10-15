@@ -36,7 +36,7 @@ const MenuLog: FC = () => {
                             <a href="/about" className={styles.nav_text}>
                                 About
                             </a>
-                            <a href="/career" className={styles.nav_text}>
+                            <a href="/about" className={styles.nav_text}>
                                 Career
                             </a>
                             <a href="#" className={styles.icon} id="Icon">

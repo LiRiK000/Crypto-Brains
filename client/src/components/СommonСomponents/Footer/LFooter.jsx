@@ -46,17 +46,12 @@ export default function LFooter() {
                   <div className={styles.text}>
                     <ul className='list-unstyled mb-0'>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
-                          About Us
-                        </a>
-                      </li>
-                      <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/about' className={styles.text}>
                           Our Team
                         </a>
                       </li>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/road' className={styles.text}>
                           Road Map
                         </a>
                       </li>
@@ -86,12 +81,7 @@ export default function LFooter() {
                         </a>
                       </li>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
-                          Video Tutorial
-                        </a>
-                      </li>
-                      <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/beginner' className={styles.text}>
                           Beginner’s Guide
                         </a>
                       </li>
@@ -118,11 +108,6 @@ export default function LFooter() {
                       <li className={styles.text}>
                         <a href='#' className={styles.text}>
                           API Document
-                        </a>
-                      </li>
-                      <li className={styles.text}>
-                        <a href='#' className={styles.text}>
-                          Ticket Services
                         </a>
                       </li>
                     </ul>
@@ -195,11 +180,6 @@ export default function LFooter() {
                       <li className={styles.text}>
                         <a href='/news' className={styles.text}>
                           News
-                        </a>
-                      </li>
-                      <li className={styles.text}>
-                        <a href='#' className={styles.text}>
-                          Events
                         </a>
                       </li>
                     </ul>
