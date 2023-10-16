@@ -101,7 +101,7 @@ export default function LFooter() {
                         </a>
                       </li>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/token' className={styles.text}>
                           Token Listing
                         </a>
                       </li>

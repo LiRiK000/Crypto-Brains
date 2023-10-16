@@ -10,6 +10,7 @@ import NewsMain from "./pages/News/NewsMain";
 import NewsDetails from "./pages/News/NewsDetails";
 import RoadMap from "./pages/RoadMap/RoadMap";
 import BeginnersGuide from "./pages/BeginersGuide/BeginnersGuide";
+import {Token} from "./pages/TokenPage/Token";
 
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
                 <Route path="/Road" element={<RoadMap />} />
 
                 <Route path="/beginner" element={<BeginnersGuide />} />
+
+                <Route path="/token" element={<Token />} />
 
                 <Route path="*" element={<Error />} />
 
