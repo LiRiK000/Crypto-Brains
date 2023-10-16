@@ -11,24 +11,6 @@ header {
     border-bottom: #1B70F1 1px solid;
 }
 
-@font-face {
-    font-family: 'Source Sans Pro';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    src: url(../../../../public/fonts/SourceSans3-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: 'Source Sans Regular';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    src: url(../../../../public/fonts/SourceSans3-Regular.ttf);
-}
-
 .header_logo {
     border-right: 1px solid #adb3bf54;
     padding-right: 40px;
@@ -52,8 +34,7 @@ header {
 }
 
 .nav_text {
-    color: var(--grey-paragraph-6, #ADB3BF);
-    font-family: 'Source Sans Pro';
+    color: #ADB3BF;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -62,11 +43,12 @@ header {
     padding: 8px 18px;
     opacity: 0.8;
     margin-right: 30px;
+    transition: 300ms;
 }
 
 .nav_text:hover {
-    color: var(--White, #FFF);
-    opacity: 1.2;
+    color:  #FFF;
+    opacity: 1;
 }
 
 .btns {
@@ -77,14 +59,12 @@ header {
 
 .btn1 {
     display: inline-block;
-    color: var(--White, #FFF);
+    color: #FFF;
     margin-right: 10px;
-    font-family: 'Source Sans Pro';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-    display: inline-block;
     width: 140px;
     min-width: fit-content;
     height: 56px;
@@ -93,19 +73,16 @@ header {
     align-items: center;
     gap: 10px;
     border-radius: 4px;
-    background: var(--primary-9, #1E1F25);
+    background: #1E1F25;
 }
 
 .btn2 {
     display: inline-block;
-    color: var(--White, #FFF);
-
-    font-family: 'Source Sans Pro';
+    color: #FFF;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-    display: inline-block;
     width: 140px;
     min-width: fit-content;
     height: 56px;
@@ -114,7 +91,7 @@ header {
     align-items: center;
     gap: 10px;
     border-radius: 4px;
-    background: var(--primary-9, #1B70F1);
+    background: #1B70F1;
 }
 
 @media screen and (max-width: 1415px) {
@@ -132,7 +109,7 @@ header {
 
     .wrapper a.icon {
         float: right;
-        margin-top: 0px;
+        margin-top: 0;
         display: block;
         font-size: 50px;
     }
@@ -154,13 +131,13 @@ header {
     .navigation.responsive a.icon {
         position: absolute;
         top: -60px;
-        right: 0px;
+        right: 0;
     }
 
     .navigation.responsive {
         position: relative;
         top: 50px;
-        left: 0px;
+        left: 0;
     }
 
     .navigation.responsive a {

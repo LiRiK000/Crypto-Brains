@@ -36,7 +36,7 @@ const MenuLog: FC = () => {
                             <a href="/about" className={styles.nav_text}>
                                 About
                             </a>
-                            <a href="/career" className={styles.nav_text}>
+                            <a href="/about" className={styles.nav_text}>
                                 Career
                             </a>
                             <a href="#" className={styles.icon} id="Icon">
@@ -63,7 +63,7 @@ const MenuLog: FC = () => {
                                             alignItems: 'center'
                                         }}
                                     >
-                                        Jerry Smith
+                                        {localStorage.getItem('username')}
                                     </h1>
                                     <img src={require('./userImg.png')} alt=""/>
                                 </div>

@@ -18,13 +18,12 @@ interface IProps {
 
 const Sbp: FC<IProps> = (props) => {
     const dispatch = useDispatch();
-    let {isAuth, token, email, id} = useAuth();
+    let  {email} = useAuth();
     const [activeTab, setActiveTab] = useState(0);
     const handleLogout = () => {
         window.location.reload();
         dispatch(removeUser());
         localStorage.clear();
-        console.log(email)
     };
 
 
@@ -33,8 +32,6 @@ const Sbp: FC<IProps> = (props) => {
 
     if (storedEmail && storedId) {
         email = storedEmail
-        id = storedId
-        isAuth = true;
     } else (
         window.location.replace('/')
     )
@@ -81,8 +78,8 @@ const Sbp: FC<IProps> = (props) => {
                                         padding: '10px',
                                     }}
                                 >
-                                    {props.tabs.map((tab, index) => (
-                                        <Button
+                                    {props.tabs.map(function (tab, index) {
+                                        return <Button
                                             key={index}
                                             variant={activeTab === index ? 'primary' : ''}
                                             style={{
@@ -97,8 +94,8 @@ const Sbp: FC<IProps> = (props) => {
                                             >
                                                 {props.TabsContent[index]}
                                             </h1>
-                                        </Button>
-                                    ))}
+                                        </Button>;
+                                    })}
 
                                     <Button
                                         variant="danger"
@@ -110,7 +107,7 @@ const Sbp: FC<IProps> = (props) => {
                                             width:'100%'
                                         }}
                                     >
-                                        Log Out from {email}
+                                        Log Out from {localStorage.getItem('username')}
                                     </Button>
                                 </Card.Text>
                             </Card.Body>
