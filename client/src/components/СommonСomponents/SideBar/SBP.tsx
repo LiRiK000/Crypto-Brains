@@ -24,7 +24,6 @@ const Sbp: FC<IProps> = (props) => {
         window.location.reload();
         dispatch(removeUser());
         localStorage.clear();
-        console.log(email)
     };
 
 
@@ -108,7 +107,7 @@ const Sbp: FC<IProps> = (props) => {
                                             width:'100%'
                                         }}
                                     >
-                                        Log Out from {email}
+                                        Log Out from {localStorage.getItem('username')}
                                     </Button>
                                 </Card.Text>
                             </Card.Body>

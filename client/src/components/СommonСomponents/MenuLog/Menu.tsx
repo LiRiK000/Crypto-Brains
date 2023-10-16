@@ -63,7 +63,7 @@ const MenuLog: FC = () => {
                                             alignItems: 'center'
                                         }}
                                     >
-                                        Jerry Smith
+                                        {localStorage.getItem('username')}
                                     </h1>
                                     <img src={require('./userImg.png')} alt=""/>
                                 </div>

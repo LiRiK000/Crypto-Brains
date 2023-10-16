@@ -1,31 +1,40 @@
 import React, { FC } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { Forms } from "../Forms/Form";
-import styles from './Reg.module.css'
+import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"; // Добавили updateProfile
+import { Forms } from "../Forms/FormForReg/Form";
 import { setUser } from "store/slices/userSlice";
 import { Col, Container, Row } from "react-bootstrap";
+import styles from './Reg.module.css';
 
 const SignUp: FC = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-
-    const handleRegister = (email: string, password: string) => {
+    const handleRegister = (email: string, password: string, username: string) => {
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password)
-            .then(({user}) => {
-                dispatch(setUser({
-                    email: user.email,
-                    token: user.refreshToken,
-                    id: user.uid,
-                    emailVerified: user.emailVerified
-                }));
-                navigate('/login')
+            .then(({ user }) => {
+                // Обновляем профиль пользователя с использованием username
+                updateProfile(user, { displayName: username })
+                    .then(() => {
+                        // После успешного обновления профиля сохраняем информацию в хранилище
+                        dispatch(setUser({
+                            email: user.email,
+                            token: user.refreshToken,
+                            id: user.uid,
+                            username: user.displayName
+                        }));
+                        console.log(user.displayName);
+                        // Навигация на страницу входа
+                        navigate('/login');
+                    })
+                    .catch((error) => {
+                        console.error("Ошибка при обновлении профиля: ", error);
+                    });
             })
-            .catch (console.error);
-    }
+            .catch(console.error);
+    };
 
     return (
         <>
@@ -105,8 +114,7 @@ const SignUp: FC = () => {
                 </Row>
             </Container>
         </>
-    )
-}
-
+    );
+};
 
 export { SignUp };
