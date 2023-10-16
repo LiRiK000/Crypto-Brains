@@ -1,0 +1,103 @@
+.wrapper{
+	width: 100%;
+}
+.content{
+	margin: 5%;
+}
+.textBlock{
+	margin-bottom: 60px;
+}
+.title{
+	margin-bottom: 60px;
+	color: #FFF;
+	max-font-size: 58px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.subtitle{
+	color: #CFD3DA;
+	margin-bottom: 20px;
+	max-font-size: 32px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.text{
+	color: #ADB3BF;
+	max-font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+}
+.form{
+	padding: 60px;
+	border-radius: 10px;
+	background:#1E1F25;
+	gap: 60px;
+}
+.card{
+	border-radius: 10px;
+	background:#1E1F25;
+}
+.cardTitle{
+	color: #FFF;
+	max-font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.cardSubtitle{
+	margin-bottom: 40px;
+	color: #FDFDFD;
+	max-font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px;
+}
+.cardPersInfo{
+	padding-bottom: 60px;
+	border-bottom: rgb(255, 255, 255, 0.1) 1px solid;
+	margin-bottom: 120px;
+}
+/* Стили для темного фона формы */
+.darkForm {
+	background-color: #333; /* Цвет фона формы */
+	color: #fff; /* Цвет текста в форме */
+	border: 1px solid #555; /* Цвет границы формы */
+	max-width: 40vw;
+}
+.darkForm:active{
+	background-color: #333; /* Цвет фона формы */
+	color: #fff; /* Цвет текста в форме */
+	border: 1px solid #555; /* Цвет границы формы */
+	max-width: 40vw;
+}
+
+.btn{
+	text-align: center;
+	gap: 10px;
+}
+.btnSub{
+	padding: 13px 66px;
+	align-items: center;
+	justify-content: center;
+}
+/* Стили для темного фона введенного текста */
+.darkForm {
+	background-color: #131517; /* Цвет фона введенного текста */
+	color: #FFF; /* Цвет текста во введенном тексте */
+	border: 1px solid #555; /* Цвет границы введенного текста */
+}
+
+/* Стили для placeholder текста */
+.darkForm::placeholder {
+	color: #FFF; /* Цвет placeholder текста */
+}
+
+/* Стили для активного состояния формы */
+.darkForm:focus {
+	background-color: #131517; /* Цвет фона при фокусировке */
+	color: #fff; /* Цвет текста при фокусировке */
+	border: 1px solid #777; /* Цвет границы при фокусировке */
+}

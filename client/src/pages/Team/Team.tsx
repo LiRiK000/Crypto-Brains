@@ -26,10 +26,6 @@ const cardData= [
 
 
 const Team = () => {
-
-
-
-
     return (
         <div style={{ background: '#1E1F25' }}>
             <MenuCont />

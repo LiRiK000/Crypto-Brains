@@ -7,6 +7,14 @@
 a, a:visited, a:hover, a:active, a:focus{
 	text-decoration: none;
 }
+img {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+
+}
 @font-face {
 	font-family: 'Source Sans Pro';
 	font-size: 18px;

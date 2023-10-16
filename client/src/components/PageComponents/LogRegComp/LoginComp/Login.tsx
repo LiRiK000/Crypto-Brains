@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Forms } from "../Forms/Form";
+import { Forms } from "../Forms/FormForLogIn/Form";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { Container, Row, Col } from "react-bootstrap";
@@ -9,11 +9,6 @@ import styles from "./Login.module.css";
 const Log: FC = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
-
-
-
-
     const handleLogin = (email: string, password: string) => {
         const auth = getAuth();
         signInWithEmailAndPassword(auth, email, password)
@@ -22,18 +17,18 @@ const Log: FC = () => {
                     email: user.email,
                     token: user.refreshToken,
                     id: user.uid,
-                    emailVerified: user.emailVerified
+                    username: user.displayName
                 }));
-                if (user.refreshToken && user.email && user.uid) {
+                if (user.refreshToken && user.email && user.uid && user.displayName) {
                     localStorage.setItem('token', user.refreshToken);
                     localStorage.setItem('email', user.email);
                     localStorage.setItem('id', user.uid);
+                    localStorage.setItem('username', user.displayName);
                     console.log(user);
                 }
                 navigate('/')
             })
             .catch(console.error);
-
     }
     localStorage.setItem('currentUser', JSON.stringify(setUser));
     return (

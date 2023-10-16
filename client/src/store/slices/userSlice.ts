@@ -4,7 +4,7 @@ const initialState = {
     email: null,
     token: null,
     id: null,
-    emailVerified: null,
+    username: null
 }; // initial state
 
 
@@ -16,14 +16,13 @@ const userSlice = createSlice({
             state.email = action.payload.email;
             state.token = action.payload.token;
             state.id = action.payload.id;
-            state.emailVerified = action.payload.emailVerified;
+            state.username = action.payload.username;
         },
         removeUser(state) {
             state.email = null;
             state.token = null;
             state.id = null;
-            state.emailVerified = null;
-            const isAuth = false;
+            state.username = null;
         },
     }
 });
