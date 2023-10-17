@@ -27,16 +27,16 @@ const cardData= [
 
 const Team = () => {
     return (
-        <div style={{ background: '#1E1F25' }}>
-            <MenuCont />
-            <TMP />
-            <TeamCards images={ManagementDeportment} cardData={cardData} sectionName='Managment Deportament' />
-            <TeamCards images={HRDeportment} cardData={cardData} sectionName='HR Deportament' />
-            <TeamCards images={MarketingDeportment} cardData={cardData} sectionName='Marketing Deportament' />
-            <TeamCards images={FinanceDeportment} cardData={cardData} sectionName='Finance Deportament' />
+        <>
+            <MenuCont/>
+            <TMP/>
+            <TeamCards images={ManagementDeportment} cardData={cardData} sectionName='Managment Deportament'/>
+            <TeamCards images={HRDeportment} cardData={cardData} sectionName='HR Deportament'/>
+            <TeamCards images={MarketingDeportment} cardData={cardData} sectionName='Marketing Deportament'/>
+            <TeamCards images={FinanceDeportment} cardData={cardData} sectionName='Finance Deportament'/>
             <LFooter/>
-        </div>
-    )
+        </>
+    );
 }
 
 

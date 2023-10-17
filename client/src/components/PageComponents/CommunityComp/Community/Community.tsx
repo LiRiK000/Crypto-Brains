@@ -1,19 +1,12 @@
 import React from 'react';
-import styles from './TL.module.css';
-import {Button, Col, Form, Row} from "react-bootstrap";
-const Tl = () => {
-    const renderFormInput = (label : string, placeholder : string) => (
-        <Form.Group className="mb-4">
-            <Form.Label className="text-white">{label}</Form.Label>
-            <Form.Control className={styles.darkForm} placeholder={placeholder}/>
-        </Form.Group>
-    );
+import styles from './Community.module.css';
+const Community = () => {
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.content}>
                 <div className={styles.textBlock}>
-                    <h1 className={styles.title}>Token Listing</h1>
+                    <h1 className={styles.title}>Community</h1>
                     <p className={styles.text}>But I must explain to you how all this mistaken idea of denouncing
                         pleasure and praising pain was born and I will give you a complete account of the system, and
                         expound the actual teachings of the great explorer of the truth, the master-builder of human
@@ -81,58 +74,9 @@ const Tl = () => {
                         pleasures have to be repudiated and annoyances accepted.
                     </p>
                 </div>
-                <div className={styles.form}>
-                    <h1 className={styles.cardTitle}>Listing Application Form</h1>
-                    <div className={styles.cardPersInfo}>
-                        <h1 className={styles.cardSubtitle}>Personal Information</h1>
-                        <Row>
-                            <Col md={6}>{renderFormInput('Full Name', 'Type Here')}</Col>
-                            <Col md={6}>{renderFormInput('Mobile', 'Type Here')}</Col>
-                        </Row>
-                        <Row>
-                            <Col md={6}>{renderFormInput('Email Address', 'Type Here')}</Col>
-                            <Col md={6}>{renderFormInput('Name of Token', 'Type Here')}</Col>
-                        </Row>
-                        <Row>
-                            <Col md={6}>{renderFormInput('Token Code', 'Type Here')}</Col>
-                            <Col md={6}>{renderFormInput('Token Project', 'Type Here')}</Col>
-                        </Row>
-                    </div>
-                    <div className={styles.cardPersInfo}>
-                        <h1 className={styles.cardSubtitle}>Technical Information</h1>
-                        <Row>
-                            <Col md={6}>{renderFormInput('Category of Project', 'Type Here')}</Col>
-                            <Col md={6}>{renderFormInput('Problem', 'Type Here')}</Col>
-                        </Row>
-                        <Row>
-                            <Col md={6}>{renderFormInput('Describe of Token', 'Type Here')}</Col>
-                            <Col md={6}>{renderFormInput('Protocol of Token', 'Type Here')}</Col>
-                        </Row>
-                        <Row>
-                            <Col md={6}>{renderFormInput('Wallet Holder', 'Type Here')}</Col>
-                            <Col md={6}>{renderFormInput('Contract Address', 'Type Here')}</Col>
-                        </Row>
-                    </div>
-                    <div className={styles.cardPersInfo}>
-                        <h1 className={styles.cardSubtitle}>Finance Information</h1>
-                        <Row>
-                            <Col md={6}>{renderFormInput('Done ICO?', 'Type Here')}</Col>
-                            <Col md={6}>{renderFormInput('Price of ICO Token?', 'Type Here')}</Col>
-                        </Row>
-                        <Row>
-                            <Col md={6}>{renderFormInput('Plan of Funds Using', 'Type Here')}</Col>
-                            <Col md={6}>{renderFormInput('Protocol of Token', 'Type Here')}</Col>
-                        </Row>
-                    </div>
-                    <div className={styles.btn}>
-                        <Button size="lg" variant="primary" className={styles.btnSub}>
-                            Submit
-                        </Button>
-                    </div>
-                </div>
             </div>
         </div>
     );
 };
 
-export default Tl;
+export default Community;

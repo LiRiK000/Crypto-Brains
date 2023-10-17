@@ -56,7 +56,7 @@ export default function LFooter() {
                         </a>
                       </li>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/risk' className={styles.text}>
                           Risk Disclosure
                         </a>
                       </li>
@@ -153,12 +153,12 @@ export default function LFooter() {
                         </span>
                       </li>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/Community' className={styles.text}>
                           Community
                         </a>
                       </li>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/ts' className={styles.text}>
                           Technical Support
                         </a>
                       </li>

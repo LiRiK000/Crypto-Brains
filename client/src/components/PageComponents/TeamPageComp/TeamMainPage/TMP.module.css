@@ -31,9 +31,8 @@
 }
 
 .subText {
-    color: var(--grey-paragraph-6, #ADB3BF);
+    color:#ADB3BF;
     text-align: center;
-    font-family: 'Source Sans Pro';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -50,7 +49,6 @@
 
 .button {
     padding: 13px 26px;
-    font-family: 'Source Sans Pro', sans-serif;
     border-radius: 4px;
-    background: var(--primary-9, #1B70F1);
+    background:#1B70F1;
 }

@@ -58,7 +58,7 @@ const Rm = () => {
                         <Card bg={"dark"} text={"light"} className={styles.card} body>
                             <Card.Body>
                                 <Card.Title>
-                                    <h1 className={styles.cardTitle}>1. The standard Lorem Ipsum passage, used since the
+                                    <h1 className={styles.cardTitle}>2. The standard Lorem Ipsum passage, used since the
                                         1500s.</h1>
                                 </Card.Title>
                                 <Card.Text>
@@ -91,7 +91,7 @@ const Rm = () => {
                         <Card bg={"dark"} text={"light"} className={styles.card} body>
                             <Card.Body>
                                 <Card.Title>
-                                    <h1 className={styles.cardTitle}>1. The standard Lorem Ipsum passage, used since the
+                                    <h1 className={styles.cardTitle}>3. The standard Lorem Ipsum passage, used since the
                                         1500s.</h1>
                                 </Card.Title>
                                 <Card.Text>
@@ -124,7 +124,7 @@ const Rm = () => {
                         <Card bg={"dark"} text={"light"} className={styles.card} body>
                             <Card.Body>
                                 <Card.Title>
-                                    <h1 className={styles.cardTitle}>1. The standard Lorem Ipsum passage, used since the
+                                    <h1 className={styles.cardTitle}>4. The standard Lorem Ipsum passage, used since the
                                         1500s.</h1>
                                 </Card.Title>
                                 <Card.Text>
@@ -157,7 +157,7 @@ const Rm = () => {
                         <Card bg={"dark"} text={"light"} className={styles.card} body>
                             <Card.Body>
                                 <Card.Title>
-                                    <h1 className={styles.cardTitle}>1. The standard Lorem Ipsum passage, used since the
+                                    <h1 className={styles.cardTitle}>5. The standard Lorem Ipsum passage, used since the
                                         1500s.</h1>
                                 </Card.Title>
                                 <Card.Text>
@@ -190,7 +190,7 @@ const Rm = () => {
                         <Card bg={"dark"} text={"light"} className={styles.card} body>
                             <Card.Body>
                                 <Card.Title>
-                                    <h1 className={styles.cardTitle}>1. The standard Lorem Ipsum passage, used since the
+                                    <h1 className={styles.cardTitle}>6. The standard Lorem Ipsum passage, used since the
                                         1500s.</h1>
                                 </Card.Title>
                                 <Card.Text>
@@ -223,7 +223,7 @@ const Rm = () => {
                         <Card bg={"dark"} text={"light"} className={styles.card} body>
                             <Card.Body>
                                 <Card.Title>
-                                    <h1 className={styles.cardTitle}>1. The standard Lorem Ipsum passage, used since the
+                                    <h1 className={styles.cardTitle}>7. The standard Lorem Ipsum passage, used since the
                                         1500s.</h1>
                                 </Card.Title>
                                 <Card.Text>
