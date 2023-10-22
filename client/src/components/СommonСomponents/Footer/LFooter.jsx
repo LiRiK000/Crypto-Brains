@@ -46,7 +46,7 @@ export default function LFooter() {
                   <div className={styles.text}>
                     <ul className='list-unstyled mb-0'>
                       <li className={styles.text}>
-                        <a href='/about' className={styles.text}>
+                        <a href='/team' className={styles.text}>
                           Our Team
                         </a>
                       </li>

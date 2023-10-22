@@ -1,0 +1,76 @@
+.wrapper{
+	width: 100%;
+}
+.content{
+	margin-left: 3%;
+	margin-top: 1%;
+	margin-right: 5%;
+}
+.FeeRatesText{
+	margin-bottom: 30px;
+	color: #FFF;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+}
+.FeeRates{
+	display: flex;
+	padding: 24px;
+	border-radius: 6px;
+	background: var(--bg-card-bg-2, #1E1F25);
+}
+.cardContainer {
+	display: inline-flex;
+	margin-top: 20px;
+	gap: 10vw;
+
+}
+.card {
+	display: flex;
+	padding: 30px;
+	border-radius: 6px;
+	background: #272A34;
+}
+
+.cardInfo {
+	text-align: center; /* Выравнивание текста по центру */
+}
+
+.CardTitleText {
+	color: #ECEEF0;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 36px;
+}
+
+.cardSubtitleText {
+	color: #ADB3BF;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.cardTitle{
+	width: 100%;
+}
+.cardSubtitle{
+	width: 100%;
+}
+.CardTitleText{
+	color: #ECEEF0;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 36px;
+}
+.cardSubtitleText{
+	color: #ADB3BF;
+	text-align: center;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+}

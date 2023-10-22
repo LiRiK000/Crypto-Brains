@@ -14,6 +14,7 @@ import {Token} from "./pages/TokenPage/Token";
 import Cp from "./pages/CommunityPage/CP";
 import Rp from "./pages/RiskPage/Rp";
 import Ts from "./pages/TechnicalSupport/Ts";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 function App() {
     return (
@@ -27,7 +28,7 @@ function App() {
                 <Route path="/Team" element={<Team />} />
                 {/* Route for the Team page. */}
 
-                <Route path="/About" element={<Team />} />
+                <Route path="/About" element={<AboutUs />} />
                 {/* Route for the About page, which might display team information. */}
 
                 <Route path="/login" element={<Login />} />
@@ -62,7 +63,7 @@ function App() {
 
                 <Route path="/ts" element={<Ts />} />
                 {/* Route for the Technical Support page. */}
-
+                
                 <Route path="*" element={<Error />} />
                 {/* Default route for handling any unknown or undefined routes (404 Error). */}
             </Routes>
