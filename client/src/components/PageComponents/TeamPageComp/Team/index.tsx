@@ -21,7 +21,7 @@ const TeamCards: React.FC<ITeamProps> = (props) => {
                         {props.cardData.map((card, index) => (
                             <Col md={6} lg={3} key={index}>
                                 <Card className={styles.card} style={{ background: '#131517' }}>
-                                    <Card.Body>
+                                    <Card.Body className={styles.CardBody}>
                                         <img src={props.images[card.imageIndex]} alt={card.name} />
                                         <Card.Subtitle className={styles.CardOwnerBlock}>
                                             <span className={styles.CardOwner}>
