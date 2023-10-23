@@ -1,10 +1,14 @@
 import React from "react";
+import Styles from "./BlogMain.module.css";
+import { Container, Row, Col } from "react-bootstrap";
+
+
 
 const BlogMain = () => {
+
     return (
-        <div>
-            <h1>Blog Main</h1>
-        </div>
+        <>
+        </>
     )
 }
 

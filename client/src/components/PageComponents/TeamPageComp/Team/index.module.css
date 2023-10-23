@@ -81,6 +81,10 @@
     border-bottom: rgb(128, 128, 128) 1px solid;
 }
 
+.CardBody {
+    background-color: none !important;
+}
+
 .CardOwner {
     margin: 30px 0;
     color: #FFF;
@@ -92,6 +96,7 @@
 
 /* !Icons */
 .icons {
+    margin-top: 3%;
     display: inline-flex;
     float: right;
 }
