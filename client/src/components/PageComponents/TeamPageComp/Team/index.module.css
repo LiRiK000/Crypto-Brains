@@ -24,18 +24,9 @@
     src: url(../../../../../public/fonts/SourceSans3-Regular.ttf);
 }
 
-/* !Links */
-a,
-a:hover,
-a:focus,
-a:active {
-    text-decoration: none;
-}
-
 /* !Wrapper */
 .wrapper {
     width: 100%;
-    background-color: #1E1F25;
 }
 
 /* !Card-wrapper */
@@ -46,7 +37,7 @@ a:active {
     margin: 0 auto;
     width: 80%;
     /* margin-bottom: 110px; */
-    border-bottom: gray 1px solid;
+    border-bottom: rgb(128, 128, 128) 1px solid;
 }
 
 /* !Section-name */
@@ -55,14 +46,12 @@ a:active {
     color: #ffffff;
     text-align: center;
     padding: 60px 0;
-    background-color: #1E1F25;
     width: 100%;
     margin-bottom: 60px;
 }
 
 .SectionText {
-    color: var(--White, #FFF);
-    font-family: 'Source Sans Pro';
+    color: #FFF;
     font-size: 46px;
     font-style: normal;
     font-weight: 600;
@@ -89,7 +78,7 @@ a:active {
 
 .CardOwnerBlock {
     margin-bottom: 30px;
-    border-bottom: gray 1px solid;
+    border-bottom: rgb(128, 128, 128) 1px solid;
 }
 
 .CardBody {
@@ -98,14 +87,12 @@ a:active {
 
 .CardOwner {
     margin: 30px 0;
-    color: var(--White, #FFF);
-    font-family: 'Source Sans Pro';
+    color: #FFF;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
 }
-
 
 /* !Icons */
 .icons {

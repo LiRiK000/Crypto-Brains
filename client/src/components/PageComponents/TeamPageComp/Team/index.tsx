@@ -9,7 +9,7 @@ interface ITeamProps {
     sectionName: string;
 }
 
-const TeamCards: React.FC<ITeamProps> = (props) => {
+const TeamCards: React.FC<ITeamProps> = (props : ITeamProps) => {
     return (
         <Container fluid className={styles.wrapper}>
             <>
@@ -20,8 +20,8 @@ const TeamCards: React.FC<ITeamProps> = (props) => {
                         </div>
                         {props.cardData.map((card, index) => (
                             <Col md={6} lg={3} key={index}>
-                                <Card className={styles.card} style={{ background: '#131517' }}>
-                                    <Card.Body className={styles.CardBody}>
+                                <Card className={styles.card} style={{ background: '#1E1F25' }}>
+                                    <Card.Body>
                                         <img src={props.images[card.imageIndex]} alt={card.name} />
                                         <Card.Subtitle className={styles.CardOwnerBlock}>
                                             <span className={styles.CardOwner}>

@@ -1,8 +1,10 @@
 .wrapper {
-	margin-top: 20px;
+	margin-top: 1%;
+	margin-right: 5%;
 }
 .cards{
 	display: flex;
+	gap: 35px;
 }
 .cardWrapper {
 	display: flex;
