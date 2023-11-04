@@ -9,6 +9,7 @@ import styles from "./Home.module.css"
 import BlogTrade from "../BlogTrade/BlogTrade";
 import BlogTradePage from "../BlogTrade/BlogTrade";
 import BlogCards from "../../components/PageComponents/BlogTradeComp/BlogTradeComp";
+import RelatedBlog from "../RelatedBlog/RelatedBlog";
 
 const images = [require('components/PageComponents/LandingPageComp/StartTraiding/img/1.png'), require('components/PageComponents/LandingPageComp/StartTraiding/img/1-1.png'), require('components/PageComponents/LandingPageComp/StartTraiding/img/1-2.png'), require('components/PageComponents/LandingPageComp/StartTraiding/img/1-3.png')];
 
@@ -48,6 +49,7 @@ const Home : FC = () => {
             <LandingMainPage></LandingMainPage>
             <LandingQuestion></LandingQuestion>
             <BlogTrade></BlogTrade>
+            <RelatedBlog></RelatedBlog>
             <LFooter/>
         </div>
 

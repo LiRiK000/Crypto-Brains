@@ -18,6 +18,7 @@ const BlogCards: React.FC<IBlogTradeCompProps> = (props) => {
                             <Col md={6} lg={3} key={index}>
                                 <Card className={styles.card} style={{ background: '#131517' }}>
                                     <Card.Body className={styles.CardBody}>
+                                        <a href=''></a>
                                         <img src={props.images[card.imageIndex]} className={styles.img}/>
                                         <Card.Subtitle className={styles.sectionText}>
                                             <div className={styles.time}>
@@ -28,10 +29,10 @@ const BlogCards: React.FC<IBlogTradeCompProps> = (props) => {
                                                 <span>Crypto Has New Announcement About Russia And...</span>
                                             </div>
                                             <div className={styles.RM}>
-                                                <Button className={styles.btm}>
+                                                <div className={styles.btm}>
                                                     <span>Read More</span>
                                                     <img src={require('./array.png')} alt="array"/>
-                                                </Button>
+                                                </div>
                                             </div>
                                         </Card.Subtitle>
                                     </Card.Body>

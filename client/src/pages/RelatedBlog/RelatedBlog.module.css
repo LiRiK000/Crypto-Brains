@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+}
+
+.wrapper {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Source Sans Pro';
+}
+
+.imgSection {
+    margin: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textSection {
+    padding: 3%;
+    border-radius: 10px;
+    margin-top: -23%;
+    background-color: #1E1F25;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap:10%;
+    color: #ADB3BF;
+}
+
+.img {
+    width: 13%;
+}
+
+.h2 {
+    color: #FFF;
+    font-size: 220%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.h4 {
+    color:#CFD3DA;
+    font-size: 150%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.textR {
+    font-size: 100%;
+    gap:100px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    color: #ADB3BF;
+}
+
+.annotation {
+    color: #808A9A;
+    border-radius: 40px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 4%;
+    background: #131517;
+}
+
+.line {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: 1px;
+    opacity: 0.1;
+    background: #FFF;
+}
+
+.wrappShare {
+    display: flex;
+    justify-content: end;
+    gap:2%;
+}
+
+@media (max-width: 528px) and (min-width: 200px){
+    .wrappShare > span{
+        display: none !important;
+    }
+}
+
+.links {
+    gap:2%;
+    display: flex;
+    align-items: center;
+}
