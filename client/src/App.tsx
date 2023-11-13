@@ -15,10 +15,10 @@ import Cp from "./pages/CommunityPage/CP";
 import Rp from "./pages/RiskPage/Rp";
 import Ts from "./pages/TechnicalSupport/Ts";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import BlogMain from "./pages/Blog/BlogMain";
 
 function App() {
     return (
-        // Initialize the Router for handling navigation in the app.
         <Router>
             <Routes>
                 {/* Define routes for different pages and components. */}
@@ -63,7 +63,10 @@ function App() {
 
                 <Route path="/ts" element={<Ts />} />
                 {/* Route for the Technical Support page. */}
-                
+
+                <Route path="/blog" element={<BlogMain />} />
+                {/* Route for the Technical Support page. */}
+
                 <Route path="*" element={<Error />} />
                 {/* Default route for handling any unknown or undefined routes (404 Error). */}
             </Routes>

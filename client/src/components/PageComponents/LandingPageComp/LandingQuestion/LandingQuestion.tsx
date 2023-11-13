@@ -7,9 +7,7 @@ import styles from "./LandingQuestion.module.css";
 const LandingQuestion = () => {
 
     return (
-        <div className={styles.wrapper}>
-            <>
-            <Container>
+            <Container className={styles.wrapper}>
                 <Container fluid="md" className={styles.blocktext}>
                     <Row>
                         <Col>
@@ -93,10 +91,7 @@ const LandingQuestion = () => {
                     </>
                 </Row>
             </Container>
-            </>
-        </div>
     )
-
 }
 
 export default LandingQuestion;

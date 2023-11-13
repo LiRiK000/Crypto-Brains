@@ -23,7 +23,7 @@ const BlogCards: React.FC<IBlogTradeCompProps> = (props) => {
                                         <Card.Subtitle className={styles.sectionText}>
                                             <div className={styles.time}>
                                                 <span>20 Mar, 2022</span>
-                                                <span>5 Mins Read</span>
+                                                <span>5 Minutes Read</span>
                                             </div>
                                             <div className={styles.title}>
                                                 <span>Crypto Has New Announcement About Russia And...</span>
