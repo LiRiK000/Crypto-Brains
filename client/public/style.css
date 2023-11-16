@@ -15,6 +15,11 @@ img {
 	pointer-events: none;
 
 }
+.accordion-button,
+.collapsed{
+	color: white !important;
+	background-color:#131517 !important;
+}
 @font-face {
 	font-family: 'Source Sans Pro';
 	font-size: 18px;

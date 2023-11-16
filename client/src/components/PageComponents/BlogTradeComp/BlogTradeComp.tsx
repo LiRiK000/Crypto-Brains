@@ -19,12 +19,12 @@ const BlogCards: React.FC<IBlogTradeCompProps> = (props) => {
                                 <Card className={styles.card} style={{ background: '#131517' }}>
                                     <a href='relatedblog'>
                                     <Card.Body className={styles.CardBody}>
-                                        <a href=''></a>
+                                        <a href='relatedBlog'></a>
                                         <img src={props.images[card.imageIndex]} className={styles.img}/>
                                         <Card.Subtitle className={styles.sectionText}>
                                             <div className={styles.time}>
                                                 <span>20 Mar, 2022</span>
-                                                <span>5 Mins Read</span>
+                                                <span>5 Minutes Read</span>
                                             </div>
                                             <div className={styles.title}>
                                                 <span>Crypto Has New Announcement About Russia And...</span>

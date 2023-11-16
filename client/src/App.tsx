@@ -20,7 +20,6 @@ import RelatedBlog from "./pages/RelatedBlog/RelatedBlog";
 
 function App() {
     return (
-        // Initialize the Router for handling navigation in the app.
         <Router>
             <Routes>
                 {/* Define routes for different pages and components. */}
@@ -68,10 +67,9 @@ function App() {
 
                 <Route path="/blog" element={<BlogTrade />} />
                 {/* Route for the Blog page */}
-                
+
                 <Route path="*" element={<Error />} />
                 {/* Default route for handling any unknown or undefined routes (404 Error). */}
-
 
                 <Route path="relatedblog" element={<RelatedBlog />}/>
                 {/* Route for the RelatedBlog page*/}

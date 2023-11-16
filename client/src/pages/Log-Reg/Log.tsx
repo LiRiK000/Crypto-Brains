@@ -1,12 +1,12 @@
 import React, { FC, useEffect } from "react";
 import { Log } from '../../components/PageComponents/LogRegComp/LoginComp/Login';
-import { useNavigate } from "react-router";
+import {NavigateFunction, useNavigate} from "react-router";
 
 const Login: FC = () => {
-    const storedEmail = localStorage.getItem('email');
-    const storedToken = localStorage.getItem('token');
-    const storedId = localStorage.getItem('id');
-    const navigate = useNavigate();
+    const storedEmail : string | null = localStorage.getItem('email');
+    const storedToken : string | null = localStorage.getItem('token');
+    const storedId : string | null = localStorage.getItem('id');
+    const navigate : NavigateFunction = useNavigate();
 
     useEffect(() => {
         if (storedEmail && storedToken && storedId) {
