@@ -4,6 +4,7 @@ import MenuCont from "components/СommonСomponents/MenuContext/MenuContext"
 import LandingMainPage from "components/PageComponents/LandingPageComp/LandingMainPage/LandingMainPage"
 import LandingQuestion from "components/PageComponents/LandingPageComp/LandingQuestion/LandingQuestion"
 import LFooter from "components/СommonСomponents/Footer/LFooter"
+import LandingRate from "../../components/PageComponents/LandingPageComp/LandingRate/LandingRate";
 // import TS from "components/LandingPageComp/TradersSaying/TS"
 import styles from "./Home.module.css"
 import BlogTrade from "../BlogTrade/BlogTrade";
@@ -47,9 +48,8 @@ const Home : FC = () => {
         <div className={styles.wrapper}>
             <MenuCont/>
             <LandingMainPage></LandingMainPage>
+            <LandingRate></LandingRate>
             <LandingQuestion></LandingQuestion>
-            <BlogTrade></BlogTrade>
-            <RelatedBlog></RelatedBlog>
             <LFooter/>
         </div>
 

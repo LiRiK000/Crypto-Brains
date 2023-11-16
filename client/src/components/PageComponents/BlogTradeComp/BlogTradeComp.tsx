@@ -17,6 +17,7 @@ const BlogCards: React.FC<IBlogTradeCompProps> = (props) => {
                         {props.cardData.map((card, index) => (
                             <Col md={6} lg={3} key={index}>
                                 <Card className={styles.card} style={{ background: '#131517' }}>
+                                    <a href='relatedblog'>
                                     <Card.Body className={styles.CardBody}>
                                         <a href=''></a>
                                         <img src={props.images[card.imageIndex]} className={styles.img}/>
@@ -28,14 +29,9 @@ const BlogCards: React.FC<IBlogTradeCompProps> = (props) => {
                                             <div className={styles.title}>
                                                 <span>Crypto Has New Announcement About Russia And...</span>
                                             </div>
-                                            <div className={styles.RM}>
-                                                <div className={styles.btm}>
-                                                    <span>Read More</span>
-                                                    <img src={require('./array.png')} alt="array"/>
-                                                </div>
-                                            </div>
                                         </Card.Subtitle>
                                     </Card.Body>
+                                    </a>
                                 </Card>
                             </Col>
                         ))}

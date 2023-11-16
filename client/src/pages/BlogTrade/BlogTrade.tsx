@@ -23,13 +23,14 @@ const cardData = [
 const BlogTradePage = () => {
     return (
         <>
+            <MenuCont></MenuCont>
             <Container fluid className={styles.wrapper}>
                 <>
                     <div className={styles.class_wrapper}>
                         <div className={styles.imgSection}>
                             <img src={require('./img/stonks.png')} alt="Bitcoin" />
                         </div>
-                        <div>
+                        <div className={styles.card}>
                             <div className={styles.card_wrapper}>
                                 <div className={styles.date}>
                                     <div>
@@ -56,6 +57,7 @@ const BlogTradePage = () => {
             <BlogCards images={FirstBlog} cardData={cardData}/>
             <BlogCards images={SecondBlog} cardData={cardData}/>
             <BlogCards images={ThirdBlog} cardData={cardData}/>
+            <LFooter></LFooter>
         </>    
     );
 }

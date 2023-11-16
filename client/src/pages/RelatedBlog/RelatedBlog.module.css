@@ -92,6 +92,10 @@
 }
 
 @media (max-width: 528px) and (min-width: 200px){
+    .foot {
+        display: flex;
+        justify-content: center;
+    }
     .wrappShare > span{
         display: none !important;
     }

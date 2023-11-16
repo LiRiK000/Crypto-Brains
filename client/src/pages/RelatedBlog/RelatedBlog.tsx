@@ -2,6 +2,8 @@ import React from "react";
 import styles from './RelatedBlog.module.css';
 import {Container} from "react-bootstrap";
 import BlogCards from "../../components/PageComponents/BlogTradeComp/BlogTradeComp";
+import LFooter from "../../components/СommonСomponents/Footer/LFooter";
+import MenuCont from "../../components/СommonСomponents/MenuContext/MenuContext";
 
 
 const FirstBlog = [require('../../pages/BlogTrade/img/1.png'), require('../../pages/BlogTrade/img/2.png'), require('../../pages/BlogTrade/img/3.png'), require('../../pages/BlogTrade/img/4.png')];
@@ -18,6 +20,7 @@ export const RelatedBlog = () => {
 
     return (
         <>
+            <MenuCont></MenuCont>
             <Container fluid className={styles.wrapper}>
                 <>
                     <div className={styles.hold_wrapper}>
@@ -94,6 +97,7 @@ specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting 
                 </>
             </Container>
             <BlogCards images={FirstBlog} cardData={cardData}></BlogCards>
+            <LFooter></LFooter>
         </>
     )
 }

@@ -15,6 +15,8 @@ import Cp from "./pages/CommunityPage/CP";
 import Rp from "./pages/RiskPage/Rp";
 import Ts from "./pages/TechnicalSupport/Ts";
 import AboutUs from "./pages/AboutUs/AboutUs";
+import BlogTrade from "./pages/BlogTrade/BlogTrade";
+import RelatedBlog from "./pages/RelatedBlog/RelatedBlog";
 
 function App() {
     return (
@@ -63,9 +65,16 @@ function App() {
 
                 <Route path="/ts" element={<Ts />} />
                 {/* Route for the Technical Support page. */}
+
+                <Route path="/blog" element={<BlogTrade />} />
+                {/* Route for the Blog page */}
                 
                 <Route path="*" element={<Error />} />
                 {/* Default route for handling any unknown or undefined routes (404 Error). */}
+
+
+                <Route path="relatedblog" element={<RelatedBlog />}/>
+                {/* Route for the RelatedBlog page*/}
             </Routes>
         </Router>
     );
