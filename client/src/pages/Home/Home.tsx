@@ -4,11 +4,11 @@ import MenuCont from "components/СommonСomponents/MenuContext/MenuContext"
 import LandingMainPage from "components/PageComponents/LandingPageComp/LandingMainPage/LandingMainPage"
 import LandingQuestion from "components/PageComponents/LandingPageComp/LandingQuestion/LandingQuestion"
 import LFooter from "components/СommonСomponents/Footer/LFooter"
+import LandingRate from "../../components/PageComponents/LandingPageComp/LandingRate/LandingRate";
 // import TS from "components/LandingPageComp/TradersSaying/TS"
 import styles from "./Home.module.css"
 import BlogTrade from "../BlogTrade/BlogTrade";
 import BlogTradePage from "../BlogTrade/BlogTrade";
-import BlogCards from "../../components/PageComponents/BlogTradeComp/BlogTradeComp";
 
 const images = [require('components/PageComponents/LandingPageComp/StartTraiding/img/1.png'), require('components/PageComponents/LandingPageComp/StartTraiding/img/1-1.png'), require('components/PageComponents/LandingPageComp/StartTraiding/img/1-2.png'), require('components/PageComponents/LandingPageComp/StartTraiding/img/1-3.png')];
 
@@ -46,8 +46,8 @@ const Home : FC = () => {
         <div className={styles.wrapper}>
             <MenuCont/>
             <LandingMainPage></LandingMainPage>
+            <LandingRate></LandingRate>
             <LandingQuestion></LandingQuestion>
-            <BlogTrade></BlogTrade>
             <LFooter/>
         </div>
 

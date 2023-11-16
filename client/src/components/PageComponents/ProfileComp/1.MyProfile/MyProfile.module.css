@@ -1,0 +1,53 @@
+.wrpaper {
+	width: 100%;
+}
+
+.content {
+	margin-right: 5%;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+
+.profile {
+	display: flex;
+	padding: 2rem;
+	align-items: flex-start;
+	gap: 10px;
+	border-radius: 16px;
+	background: #1E1F25;
+}
+
+.ImgAndName {
+	display: flex;
+	align-items: center;
+	margin-right: 2rem;
+}
+
+.username {
+	color: #ECEEF0;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.email,
+.id {
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.emailText,
+.idText {
+	color: #ADB3BF;
+}
+
+.emailAddress,
+.uid {
+	color: #ECEEF0;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
