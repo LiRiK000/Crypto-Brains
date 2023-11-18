@@ -71,7 +71,7 @@ export default function LFooter() {
                   <div className={styles.text}>
                     <ul className='list-unstyled mb-0'>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/FAQ' className={styles.text}>
                           F.A.Q.
                         </a>
                       </li>
@@ -96,7 +96,7 @@ export default function LFooter() {
                   <div className={styles.text}>
                     <ul className='list-unstyled mb-0'>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/profile' className={styles.text}>
                           API Service
                         </a>
                       </li>
@@ -106,7 +106,7 @@ export default function LFooter() {
                         </a>
                       </li>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='/profile' className={styles.text}>
                           API Document
                         </a>
                       </li>

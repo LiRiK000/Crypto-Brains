@@ -9,6 +9,7 @@ import {ReactJSXElement} from "@emotion/react/types/jsx-namespace";
 import Tf from "components/PageComponents/ProfileComp/4.TradingFee/TF"; //Payment Option
 import styles from './MyProfile.module.css'
 import LFooter from "../../components/СommonСomponents/Footer/LFooter";
+import AM from "../../components/PageComponents/ProfileComp/3.APIManagement/AM";
 
 const content: Array<string> = [
     'My Profile',
@@ -25,7 +26,7 @@ const tabs: {content: ReactJSXElement} [] = [
         content: <Home />,
     },
     {
-        content: <MenuCont />,
+        content: <AM />,
     },
     {
         content: <Tf />,

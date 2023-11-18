@@ -17,6 +17,7 @@ import Ts from "./pages/TechnicalSupport/Ts";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import BlogTrade from "./pages/BlogTrade/BlogTrade";
 import RelatedBlog from "./pages/RelatedBlog/RelatedBlog";
+import FAQ from "./pages/FAQ/FAQ";
 
 function App() {
     return (
@@ -71,8 +72,11 @@ function App() {
                 <Route path="*" element={<Error />} />
                 {/* Default route for handling any unknown or undefined routes (404 Error). */}
 
-                <Route path="relatedblog" element={<RelatedBlog />}/>
+                <Route path="/relatedblog" element={<RelatedBlog />}/>
                 {/* Route for the RelatedBlog page*/}
+
+                <Route path="/FAQ" element={<FAQ />}/>
+                {/* Route for the FAQ page*/}
             </Routes>
         </Router>
     );
