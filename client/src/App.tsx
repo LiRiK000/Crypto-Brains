@@ -17,6 +17,7 @@ import Ts from "./pages/TechnicalSupport/Ts";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import BlogTrade from "./pages/BlogTrade/BlogTrade";
 import RelatedBlog from "./pages/RelatedBlog/RelatedBlog";
+import Market from "./pages/Market/Market";
 
 function App() {
     return (
@@ -73,6 +74,8 @@ function App() {
 
                 <Route path="relatedblog" element={<RelatedBlog />}/>
                 {/* Route for the RelatedBlog page*/}
+
+                <Route path="markets" element={<Market />}/>
             </Routes>
         </Router>
     );

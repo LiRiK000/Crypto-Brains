@@ -1,0 +1,29 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.title {
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    color:  #FFF;
+    font-family: 'Source Sans Pro';
+    font-size: 300%;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.20) 48.42%, rgba(255, 255, 255, 0.04) 100%);
+}
+
+@media (min-width:100px) and (max-width: 1000px){
+    .title,
+    .line{
+        display: none;
+    }
+}
