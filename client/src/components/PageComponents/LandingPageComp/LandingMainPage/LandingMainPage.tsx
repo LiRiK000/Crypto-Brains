@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./LandingMainPage.module.css";
-import { Container, Col, Row, Button } from "react-bootstrap";
+import {Container, Col, Row, Button} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import img from "./img/arrow.png"
-
 
 
 const LandingMainPage = () => {
@@ -27,17 +26,17 @@ const LandingMainPage = () => {
                             </div>
                         </div>
                         <div className={styles.buttonSection}>
-                            <a href="/login">
-                                <Button className={styles.btn1}>
+                            <Button className={styles.btn1}>
+                                <a href="/login">
                                     Start Now
                                     <img src={img} alt=""/>
-                                </Button>
-                            </a>
-                            <a href="/beginner">
-                                <Button className={styles.btn2}>
+                                </a>
+                            </Button>
+                            <Button className={styles.btn2}>
+                                <a href="/beginner">
                                     Beginner’s Guide
-                                </Button>
-                            </a>
+                                </a>
+                            </Button>
                         </div>
                     </Col>
                     <Col col={4} md={0} lg={4} className={styles.imgCol}>
@@ -52,6 +51,6 @@ const LandingMainPage = () => {
         </div>
     );
 
-} 
+};
 
 export default LandingMainPage;
