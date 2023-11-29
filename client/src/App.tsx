@@ -18,6 +18,12 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import BlogTrade from "./pages/BlogTrade/BlogTrade";
 import RelatedBlog from "./pages/RelatedBlog/RelatedBlog";
 import Market from "./pages/Market/Market";
+import CareerPage from "./pages/Career/CareerPage/CareerPage";
+import RulePage from "./pages/Career/RulePage/RulePage";
+import ApplyPage from "./pages/Career/ApplyPage/ApplyPage";
+import Thank from "./pages/Career/ThxPage/Thank";
+import Referral from "./pages/ReferralProgramPage/Referral/Referral";
+import Affiliate from "./pages/ReferralProgramPage/Affiliate/Affiliate";
 
 function App() {
     return (
@@ -76,6 +82,26 @@ function App() {
                 {/* Route for the RelatedBlog page*/}
 
                 <Route path="markets" element={<Market />}/>
+                {/* Route for the Markets page */}
+
+                <Route path="career" element={<CareerPage/>}/>
+                {/* Route for the Career page */}
+
+                <Route path="rule" element={<RulePage/>}/>
+                {/* Route for the F.A.Q. page */}
+
+                <Route path="apply" element={<ApplyPage/>}/>
+                {/* Route for the Agreement page */}
+
+                <Route path="Thank" element={<Thank/>}/>
+                {/* Route for the Thanks for register page */}
+
+                <Route path="referral" element={<Referral/>}/>
+                {/* Route for the Referral page */}
+
+                <Route path="affilirate" element={<Affiliate/>}/>
+                {/* Route for the Affiliate page */}
+
             </Routes>
         </Router>
     );

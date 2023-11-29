@@ -26,7 +26,7 @@ const MenuUnLog: FC = () => {
                             </a>
                         </div>
                         <div className="header-text">
-                            <a href="#" className={styles.nav_text}>
+                            <a href="markets" className={styles.nav_text}>
                                 Market
                             </a>
                             <a href="#" className={styles.nav_text}>
@@ -38,7 +38,7 @@ const MenuUnLog: FC = () => {
                             <a href="/about" className={styles.nav_text}>
                                 About
                             </a>
-                            <a href="/about" className={styles.nav_text}>
+                            <a href="career" className={styles.nav_text}>
                                 Career
                             </a>
                             <a href="#" className={styles.icon} id="Icon">

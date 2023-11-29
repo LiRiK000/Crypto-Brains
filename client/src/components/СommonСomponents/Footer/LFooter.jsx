@@ -121,7 +121,7 @@ export default function LFooter() {
                   <div className={styles.text}>
                     <ul className='list-unstyled mb-0'>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='referral' className={styles.text}>
                           Referral
                         </a>
                       </li>
@@ -131,7 +131,7 @@ export default function LFooter() {
                         </a>
                       </li>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='affilirate' className={styles.text}>
                           Affiliate Program
                         </a>
                       </li>
@@ -146,7 +146,7 @@ export default function LFooter() {
                   <div className={styles.text}>
                     <ul className='list-unstyled mb-0'>
                       <li className={styles.text}>
-                        <a href='#' className={styles.text}>
+                        <a href='career' className={styles.text}>
                           Career </a>
                         <span className={styles.wah}>
                           ( We Are Hiring )

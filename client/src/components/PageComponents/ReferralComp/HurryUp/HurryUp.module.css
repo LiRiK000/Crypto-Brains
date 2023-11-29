@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin-top: 15%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 300%;
+    color:white;
+}
+
+.annotation {
+    font-size: 120%;
+    color: #959595;
+}
+
+.btn{
+    margin-top: 3%;
+}

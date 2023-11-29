@@ -1,0 +1,147 @@
+*{
+   margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin-top: 5%;
+    display: flex;
+}
+
+.sectionText{
+    width: 50%;
+}
+
+.CB{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:2%;
+    color:#1B70F1;
+}
+
+.lineBlue {
+    background: #1B70F1;
+    width: 40px;
+    height: 2px;
+}
+
+.title {
+    color: #dadada;
+    font-size: 350%;
+
+}
+
+.line {
+    background: linear-gradient(90deg, rgba(154, 195, 33, 0.10) 0%, rgba(154, 195, 33, 0.80) 48.42%, rgba(154, 195, 33, 0.10) 100%);
+    height: 1px;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+.annotation{
+    color:#ADB3BF;
+    font-size: 90%;
+}
+
+.inputBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    gap:10%;
+}
+
+.blockint {
+    width: 50%;
+    border: solid;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.input{
+    width: 80%;
+    border: none;
+    background: none;
+    color:white;
+    margin-left: 10px;
+}
+
+.input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.btn {
+    padding: 3%;
+    width: 20%;
+    margin: 0;
+    max-height: fit-content;
+}
+
+.info {
+    color:white;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media (max-width:1400px) {
+    .img{
+        margin-top: 10%;
+        max-width: fit-content;
+        height: 80%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 1000px){
+    .img{
+        display: none;
+    }
+    .sectionText{
+        width: 100%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .CB {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title,
+    .annotation{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    .info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap:30px;
+        justify-content: center;
+    }
+    .inputBlock{
+        gap:20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .blockint{
+        width: 80%;
+    }
+    .btn{
+        width: 80%
+    }
+}
