@@ -1,0 +1,112 @@
+.wrapper {
+	margin-top: 1%;
+	margin-right: 5%;
+}
+.cards{
+	display: flex;
+	gap: 35px;
+}
+.cardWrapper {
+	display: flex;
+	padding: 24px;
+	align-items: flex-start;
+	border-radius: 6px;
+	background: #1e1f25;
+}
+
+.textBlock {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+}
+
+.Bank {
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.privacyBlock {
+	text-align: end;
+}
+
+.privacy {
+	color: #808a9a;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.card{
+	padding: 40px;
+	display: flex;
+	gap: 30px;
+}
+.cardTextBlock{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.left{
+	color: #ADB3BF;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+}
+.right{
+	color:#ECEEF0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+.btns{
+	display: flex;
+}
+.btn1{
+	display: flex;
+	height: 56px;
+	padding: 33px 26px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex: 1 0 0;
+	margin-right: 30px;
+}
+.btn1{
+	border: #1B70F1 1px solid !important;
+}
+.btnText1{
+	color:#1B70F1;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+
+.btn2 {
+	display: flex;
+	padding: 13px 26px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex: 1 0 0;
+}
+.btnText2{
+	color: #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}

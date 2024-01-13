@@ -1,0 +1,128 @@
+.wrapper{
+	width: 100%;
+}
+.content {
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.textSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.heroSectionText{
+	color: #1B70F1;
+	max-font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 36px;
+}
+.heroText{
+	margin-bottom: 30px;
+	color: #FFF;
+	text-align: center;
+	max-font-size: 84px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -1px;
+}
+.heroTextSmall{
+	margin-bottom: 60px;
+	color: #ADB3BF;
+	text-align: center;
+	max-font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+}
+.container {
+	z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+}
+
+.centeredImg {
+	z-index: 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+.card{
+	position: relative;
+	z-index: 1;
+	margin-top: -30px;
+	display: flex;
+	width: 100%;
+	padding: 40px;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 14px;
+	background: #1E1F25;
+}
+
+.cardItem {
+	border-right: rgba(255, 255, 255, 0.1) 1px solid;
+}
+
+.cardItem:last-child {
+	border-right: none;
+}
+
+.cardItemContent {
+	padding-right: 10vw;
+	padding-left: 10vw;
+}
+
+.cardTitle{
+	color: #FFF;
+	max-font-size: 58px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.cardSubtitle{
+	color: #CFD3DA;
+	max-font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px;
+}
+
+/* Стили для карточки на экранах шириной от 769px и выше */
+@media (max-width: 768px) {
+	.card {
+		flex-direction: column; /* Изменить направление блоков на вертикальное */
+		padding: 20px; /* Уменьшить внешний отступ */
+		width: 100%; /* Убедитесь, что карточка занимает всю ширину экрана */
+		align-items: center; /* Выравнивание карточки по центру */
+	}
+
+	.cardItem {
+		border-right: none; /* Удалить правую границу */
+	}
+
+	.cardItemContent {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+@media (max-width: 1604px) {
+	.card {
+		padding: 20px;
+		width: 100%;
+	}
+
+	.cardItem {
+		border-right: none;
+	}
+
+	.cardItemContent {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}

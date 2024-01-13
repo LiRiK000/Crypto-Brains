@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin-top: 5%;
+    color: #cacaca;
+}
+
+.open{
+    display: none;
+}
+
+.navbar{
+    padding: 3%;
+    background: #1E1F25;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6%;
+}
+
+.sectionInt {
+    padding: 10px;
+    border-radius: 4px;
+    border-color: #9ea1a5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input{
+    margin-left: 1%;
+    border-right: none;
+    background: #1E1F25;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.titles {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar {
+    color: #9ea1a5;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.line {
+    margin-top: 2%;
+    margin-bottom:2%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.20) 48.42%, rgba(255, 255, 255, 0.04) 100%);
+}
+
+@media (min-width: 100px) and (max-width:1000px){
+    .del {
+        display: none;
+    }
+    .open{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 200%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 500px){
+    .navbar {
+        background: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .titles{
+        gap:5%;
+        display: flex;
+        justify-content: center;
+    }
+}

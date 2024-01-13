@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    border-bottom: 0;
+}
+
+.card_wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.CardBody {
+    margin-top: 5%;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+.sectionText {
+    margin-top: 5%;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 80%;
+    color: #ADB3BF;
+}
+
+.title {
+    margin-top: 3%;
+    color: #CFD3DA;
+    font-family: 'Source Sans Pro';
+    font-size: 120%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}

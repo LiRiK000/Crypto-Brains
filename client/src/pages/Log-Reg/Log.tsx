@@ -1,27 +1,22 @@
-import React, { FC } from "react";
-import { Log } from '../../components/LogRegComp/LoginComp/Login';
-
-
-
-
+import React, { FC, useEffect } from "react";
+import { Log } from '../../components/PageComponents/LogRegComp/LoginComp/Login';
+import {NavigateFunction, useNavigate} from "react-router";
 
 const Login: FC = () => {
+    const storedEmail : string | null = localStorage.getItem('email');
+    const storedToken : string | null = localStorage.getItem('token');
+    const storedId : string | null = localStorage.getItem('id');
+    const navigate : NavigateFunction = useNavigate();
+
+    useEffect(() => {
+        if (storedEmail && storedToken && storedId) {
+            navigate('/profile');
+        }
+    }, []);
+
     return (
-        <div>
-            <h1>
-                Login Test
-            </h1>
-            <Log />
-
-
-            <p>
-                Or
-                <a href="/register">
-                    Register
-                </a>
-            </p>
-        </div>
-    )
+        <Log />
+    );
 };
 
 export default Login;

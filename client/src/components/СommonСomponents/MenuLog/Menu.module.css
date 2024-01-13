@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    background: #1E1F25;
+    border-bottom: #1B70F1 1px solid;
+}
+
+.header_logo {
+    border-right: 1px solid #adb3bf54;
+    padding-right: 40px;
+}
+
+.icon {
+    text-decoration: none;
+    color: #FFF;
+    display: none;
+}
+
+.header_line {
+    justify-content: space-around;
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    margin: 0 165px;
+}
+
+.nav_text {
+    color: #ADB3BF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+    padding: 8px 18px;
+    opacity: 0.8;
+    margin-right: 30px;
+    transition: 300ms;
+}
+
+
+.nav_text:hover {
+    color: #FFF;
+    opacity: 1;
+}
+
+.user {
+    border-radius: 4px;
+    padding: 23px 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+}
+
+.userAvatar {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+}
+
+.userName {
+    color: #ECEEF0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.profileLink {
+    text-decoration: none;
+    width: 120%;
+    display: flex;
+    margin-top: 5px; /* Добавьте верхний отступ по вашему желанию */
+    justify-content: center;
+    align-items: center;
+}
+
+.profileLinkText {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+  .profileLinkText:hover {
+    background-color:  #0056b3;
+  }
+
+
+
+
+@media screen and (max-width: 1415px) {
+    .nav-text {
+        margin-right: 1px;
+    }
+}
+
+@media screen and (max-width: 1477px) {
+
+    .nav_text,
+    .user {
+        display: none;
+    }
+
+    header a.icon {
+        float: right !important;
+        display: block;
+        font-size: 50px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .navigation.responsive {
+        position: relative;
+        top: 50px;
+        left: auto;
+    }
+
+    header .navigation.responsive {
+        height: 340px !important;
+    }
+
+    .navigation.responsive a.icon {
+        position: absolute;
+        top: -60px;
+    }
+
+    .navigation.responsive {
+        position: relative;
+        top: 50px;
+        left: -50px;
+    }
+
+    .navigation.responsive a {
+        font-size: 30px !important;
+        float: none;
+        display: block !important;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header_logo {
+        display: none;
+    }
+}

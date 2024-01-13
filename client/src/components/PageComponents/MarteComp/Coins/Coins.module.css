@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 100%;
+}
+
+.card_wrapper{
+    width: 100%;
+}
+
+.card {
+
+    margin-bottom: 10%;
+}
+
+.body {
+    margin-top: -5%;
+    color:white;
+    background: #1E1F25;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Source Sans Pro';
+    font-size: 130%;
+}
+
+.imgB{
+    margin-top: 5%;
+    width: 30%;
+}
+
+.imgP{
+    width: 60%;
+}
+
+.price{
+    font-size: 110%;
+}
+
+@media (min-width: 100px) and (max-width: 1000px){
+    .wrapper{
+        display: none;
+    }
+}
